@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-30T17:21:12.235Z",
+  "generatedAt": "2026-08-30T23:58:55.673Z",
   "decision": "inconclusive",
   "counts": {
     "pass": 32,
@@ -3634,7 +3634,7 @@
       "status": "pass",
       "detail": "Configured local scan passed; this is not full security verification.",
       "evidence": {
-        "scannedFiles": 8075
+        "scannedFiles": 8077
       }
     },
     {
@@ -3740,10 +3740,10 @@
     {
       "id": "harness.behavior-tests",
       "status": "pass",
-      "detail": "Command passed in 135 ms.",
+      "detail": "Command passed in 192 ms.",
       "evidence": {
         "command": "node --test evaluations/tests/gate-behavior.test.mjs evaluations/tests/launch-package.test.mjs evaluations/tests/threat-model.test.mjs",
-        "durationMs": 135.203958,
+        "durationMs": 192.43562500000002,
         "exitCode": 0,
         "log": "evaluations/artifacts/harness.behavior-tests.log"
       }
@@ -3751,10 +3751,10 @@
     {
       "id": "gates.static",
       "status": "pass",
-      "detail": "Command passed in 1260 ms.",
+      "detail": "Command passed in 1162 ms.",
       "evidence": {
         "command": "node evaluations/static-gates.mjs",
-        "durationMs": 1259.958083,
+        "durationMs": 1162.0525830000001,
         "exitCode": 0,
         "log": "evaluations/artifacts/gates.static.log"
       }
@@ -3762,10 +3762,10 @@
     {
       "id": "data.python-gates",
       "status": "pass",
-      "detail": "Command passed in 246 ms.",
+      "detail": "Command passed in 256 ms.",
       "evidence": {
         "command": "uv run --project apps/worker python evaluations/data_quality_gate.py",
-        "durationMs": 246.47495800000002,
+        "durationMs": 255.63429199999996,
         "exitCode": 0,
         "log": "evaluations/artifacts/data.python-gates.log"
       }
@@ -3773,10 +3773,10 @@
     {
       "id": "typescript.tests",
       "status": "pass",
-      "detail": "Command passed in 2032 ms.",
+      "detail": "Command passed in 2133 ms.",
       "evidence": {
         "command": "npm test",
-        "durationMs": 2031.547666,
+        "durationMs": 2133.322292,
         "exitCode": 0,
         "log": "evaluations/artifacts/typescript.tests.log"
       }
@@ -3784,10 +3784,10 @@
     {
       "id": "typescript.lint",
       "status": "pass",
-      "detail": "Command passed in 5038 ms.",
+      "detail": "Command passed in 5628 ms.",
       "evidence": {
         "command": "npm run lint",
-        "durationMs": 5038.000166,
+        "durationMs": 5628.0002079999995,
         "exitCode": 0,
         "log": "evaluations/artifacts/typescript.lint.log"
       }
@@ -3795,10 +3795,10 @@
     {
       "id": "typescript.typecheck",
       "status": "pass",
-      "detail": "Command passed in 2955 ms.",
+      "detail": "Command passed in 3673 ms.",
       "evidence": {
         "command": "npm run typecheck",
-        "durationMs": 2955.307208,
+        "durationMs": 3672.542041999999,
         "exitCode": 0,
         "log": "evaluations/artifacts/typescript.typecheck.log"
       }
@@ -3806,10 +3806,10 @@
     {
       "id": "python.tests",
       "status": "pass",
-      "detail": "Command passed in 1147 ms.",
+      "detail": "Command passed in 928 ms.",
       "evidence": {
         "command": "npm run python:test",
-        "durationMs": 1146.9026250000006,
+        "durationMs": 928.2171249999992,
         "exitCode": 0,
         "log": "evaluations/artifacts/python.tests.log"
       }
@@ -3817,10 +3817,10 @@
     {
       "id": "python.lint",
       "status": "pass",
-      "detail": "Command passed in 298 ms.",
+      "detail": "Command passed in 229 ms.",
       "evidence": {
         "command": "npm run python:lint",
-        "durationMs": 297.9385000000002,
+        "durationMs": 228.95783299999857,
         "exitCode": 0,
         "log": "evaluations/artifacts/python.lint.log"
       }
@@ -3828,10 +3828,10 @@
     {
       "id": "python.typecheck",
       "status": "pass",
-      "detail": "Command passed in 2701 ms.",
+      "detail": "Command passed in 2742 ms.",
       "evidence": {
         "command": "npm run python:typecheck",
-        "durationMs": 2701.063250000001,
+        "durationMs": 2742.1634169999998,
         "exitCode": 0,
         "log": "evaluations/artifacts/python.typecheck.log"
       }
@@ -3842,7 +3842,7 @@
       "detail": "Configured local npm audit passed; this is not full security verification.",
       "evidence": {
         "command": "npm audit --audit-level=high",
-        "durationMs": 759.1467090000006,
+        "durationMs": 781.9307079999999,
         "exitCode": 0,
         "log": "evaluations/artifacts/security.npm-audit.log"
       }
@@ -3853,7 +3853,7 @@
       "detail": "Configured local Python audit passed; this is not full security verification.",
       "evidence": {
         "command": "uv run --project apps/worker pip-audit --local",
-        "durationMs": 2283.6426249999968,
+        "durationMs": 1211.6560830000017,
         "exitCode": 0,
         "log": "evaluations/artifacts/security.python-audit.log"
       }
@@ -3861,10 +3861,10 @@
     {
       "id": "build.production",
       "status": "pass",
-      "detail": "Command passed in 13303 ms.",
+      "detail": "Command passed in 14754 ms.",
       "evidence": {
         "command": "npm run build",
-        "durationMs": 13303.054500000002,
+        "durationMs": 14753.649000000001,
         "exitCode": 0,
         "log": "evaluations/artifacts/build.production.log"
       }
@@ -3875,7 +3875,7 @@
       "detail": "Source and hosting package inventories exclude .local/** restricted evidence paths.",
       "evidence": {
         "command": "npm run release:verify-boundaries",
-        "durationMs": 301.21787499999846,
+        "durationMs": 335.02570900000137,
         "exitCode": 0,
         "log": "evaluations/artifacts/release.package-boundaries.log"
       }
@@ -3883,10 +3883,10 @@
     {
       "id": "browser.cross-browser-accessibility-visual-performance",
       "status": "pass",
-      "detail": "Command passed in 132642 ms.",
+      "detail": "Command passed in 142216 ms.",
       "evidence": {
         "command": "npx playwright test",
-        "durationMs": 132641.977625,
+        "durationMs": 142215.529416,
         "exitCode": 0,
         "log": "evaluations/artifacts/browser.cross-browser-accessibility-visual-performance.log"
       }
@@ -3894,10 +3894,10 @@
     {
       "id": "repository.diff-check",
       "status": "pass",
-      "detail": "Command passed in 166 ms.",
+      "detail": "Command passed in 52 ms.",
       "evidence": {
         "command": "git diff --check",
-        "durationMs": 166.00504200000432,
+        "durationMs": 52.46308299998054,
         "exitCode": 0,
         "log": "evaluations/artifacts/repository.diff-check.log"
       }
@@ -3974,14 +3974,14 @@
       "detail": "Measured local HTML, readiness, JS payload, headless cadence, layer, and reducer budgets passed.",
       "evidence": {
         "browser": {
-          "generatedAt": "2026-08-30T17:19:08.573Z",
+          "generatedAt": "2026-08-30T23:56:45.974Z",
           "renderer": "headless Chromium; GPU/FPS representativeness not established",
           "measured": {
-            "serverHtmlP95Ms": 19.099041999999997,
-            "interactiveReadyP95Ms": 201.55683399999998,
+            "serverHtmlP95Ms": 24.458374999999933,
+            "interactiveReadyP95Ms": 297.42316700000015,
             "globeDynamicJavaScriptKiB": 2293.521484375,
             "globeWorkerJavaScriptKiB": 496.2568359375,
-            "headlessAnimationCadenceFps": 41.156027071744376
+            "headlessAnimationCadenceFps": 120.30477208354162
           },
           "scripts": [
             {
@@ -4099,8 +4099,8 @@
           },
           "cadence": {
             "frameCount": 90,
-            "averageFps": 41.156027071744376,
-            "p95FrameMs": 10
+            "averageFps": 120.30477208354162,
+            "p95FrameMs": 9.700000000000728
           },
           "gpuTargets": {
             "status": "inconclusive",
@@ -4109,10 +4109,10 @@
           }
         },
         "internal": {
-          "generatedAt": "2026-08-30T17:18:30.033Z",
+          "generatedAt": "2026-08-30T23:56:02.680Z",
           "measured": {
-            "layerGenerationP95Ms": 0.11050000000000182,
-            "playbackReducerP95Ms": 0.0019131669999999303,
+            "layerGenerationP95Ms": 0.0837500000000091,
+            "playbackReducerP95Ms": 0.0022490000000000235,
             "highQualityArcCount": 8,
             "lowQualityArcCount": 4
           },
@@ -4139,12 +4139,12 @@
     {
       "id": "performance.real-gpu-laptop",
       "status": "pass",
-      "detail": "Representative laptop real-GPU measurement passed at 120.00 FPS over 10000.00 ms.",
+      "detail": "Representative laptop real-GPU measurement passed at 120.00 FPS over 10050.00 ms.",
       "evidence": {
         "measurement": {
           "schemaVersion": "1.0.0",
           "deviceClass": "representative-laptop",
-          "generatedAt": "2026-08-30T17:11:37.113Z",
+          "generatedAt": "2026-08-30T23:50:09.280Z",
           "route": "/globe?theme=obsidian",
           "revision": {
             "kind": "source-fingerprint",
@@ -4169,17 +4169,17 @@
             "height": 792
           },
           "measurement": {
-            "frameCount": 1200,
-            "durationMs": 10000,
+            "frameCount": 1206,
+            "durationMs": 10050,
             "fps": 120,
-            "frameTimeP95Ms": 10.199999999999,
+            "frameTimeP95Ms": 10.099999999999,
             "frameTimeMaxMs": 10.400000000001
           },
           "frameEvidence": {
             "kind": "summary",
-            "sampleCount": 1200,
-            "firstFrameAtMs": 13412.5,
-            "lastFrameAtMs": 23412.5
+            "sampleCount": 1206,
+            "firstFrameAtMs": 35237.8,
+            "lastFrameAtMs": 45287.8
           },
           "evidenceHashes": {
             "docs/assets/launch/globe.png": "094ae96521755941dbf3470c328353b2c342e073f3492fda0d4181d69ff97c7c",
@@ -4197,7 +4197,7 @@
           "minimumFps": 60
         },
         "context": {
-          "now": "2026-08-30T17:21:12.226Z",
+          "now": "2026-08-30T23:58:55.660Z",
           "expectedRoute": "/globe?theme=obsidian",
           "sourceFingerprint": "sha256:fd16f811654ae7ca16a864970e6ac44e083614eb97e4b1c0a66dd045d8f2d62e",
           "freshnessMaxAgeMs": 3600000,

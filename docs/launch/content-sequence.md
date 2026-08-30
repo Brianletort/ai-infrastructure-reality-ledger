@@ -1,8 +1,10 @@
 # Ten-piece public-beta content sequence
 
 Every post below is a draft. Publish only after repository visibility, branding, hosting, and the
-final release disposition are approved. Replace the repository and demo placeholders with approved
-URLs; do not imply the synthetic corpus is market coverage.
+final release disposition are approved. Use the approved
+[repository](https://github.com/Brianletort/ai-infrastructure-reality-ledger) and
+[live demo](https://ai-infrastructure-reality-ledger.vercel.app/launch) URLs; do not imply the
+synthetic corpus is market coverage.
 
 ## Post 1: The launch thesis
 

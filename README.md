@@ -14,8 +14,10 @@ Those fixtures test the product and evidence model; they are **not real market c
 
 ## Live demo
 
-**Placeholder:** no public deployment exists. Until hosting is separately approved, run the local
-demo and open [`http://localhost:3000/launch`](http://localhost:3000/launch).
+- [Public launch experience](https://ai-infrastructure-reality-ledger.vercel.app/launch)
+- [Source repository](https://github.com/Brianletort/ai-infrastructure-reality-ledger)
+
+To run the same experience locally:
 
 ```bash
 npm ci

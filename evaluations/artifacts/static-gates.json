@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-30T17:18:28.336Z",
+  "generatedAt": "2026-08-30T23:56:00.695Z",
   "summary": {
     "decision": "pass",
     "counts": {
@@ -3629,7 +3629,7 @@
       "status": "pass",
       "detail": "Configured local scan passed; this is not full security verification.",
       "evidence": {
-        "scannedFiles": 8075
+        "scannedFiles": 8077
       }
     },
     {

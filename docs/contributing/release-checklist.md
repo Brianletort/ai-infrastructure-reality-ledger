@@ -7,8 +7,8 @@ push, remote repository, public visibility, hosting, domain, release, or product
 
 - [x] Launch-candidate rerun: 32 measured gates pass.
 - [x] Launch-candidate rerun: 0 measured gates fail.
-- [x] Representative laptop real-GPU gate: **pass** at 120.00 FPS over 10,000.00 ms. The
-  scripted real-browser artifact was generated at 2026-08-30T17:11:37.113Z for
+- [x] Representative laptop real-GPU gate: **pass** at 120.00 FPS over 10,050.00 ms. The
+  scripted real-browser artifact was generated at 2026-08-30T23:50:09.280Z for
   `/globe?theme=obsidian` with `/globe` runtime fingerprint
   `sha256:fd16f811654ae7ca16a864970e6ac44e083614eb97e4b1c0a66dd045d8f2d62e`, Chrome
   151.0.0.0, the Apple M4 Pro Metal renderer, matching 1199 × 792 overlay/canvas geometry,
@@ -60,48 +60,48 @@ evaluated without rerunning affected gates.
 
 - [x] Confirm the public name and repository slug: AI Infrastructure Reality Ledger at
   `Brianletort/ai-infrastructure-reality-ledger`.
-- [ ] Record trademark/name review. The exact-name search found no direct collision; that is not
+- [x] Record trademark/name review. The exact-name search found no direct collision; that is not
   trademark clearance.
 - [x] Confirm repository owner and initial visibility: `Brianletort`, private before public review.
-- [ ] Confirm default branch, Apache-2.0 license display, and active private security-advisory
-  channel after remote creation.
-- [ ] Confirm whether a domain is needed. If yes, approve registrar, owner, DNS, TLS, renewal, and
-  rollback separately.
-- [ ] Replace local demo and repository URL placeholders only with approved destinations.
+- [x] Confirm default branch `main` and Apache-2.0 license display after remote creation.
+- [x] No custom domain is required for this beta; the approved canonical origin is
+  `https://ai-infrastructure-reality-ledger.vercel.app`.
+- [x] Replace local demo and repository URL placeholders only with approved destinations.
 
 ## Source, data, and license
 
-- [ ] Confirm the six-record inventory and 100 timelines remain visibly synthetic and are never
+- [x] Confirm the six-record inventory and 100 timelines remain visibly synthetic and are never
   described as real market coverage.
-- [ ] Confirm all source manifests contain publisher, authority, directness, retrieval, attribution,
+- [x] Confirm all source manifests contain publisher, authority, directness, retrieval, attribution,
   rights, and redistribution class.
-- [ ] Run `npm run notices:check`.
-- [ ] Include `LICENSE`, `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_NOTICES.json`,
+- [x] Run `npm run notices:check`.
+- [x] Include `LICENSE`, `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_NOTICES.json`,
   `THIRD_PARTY_NOTICES.python.json`, and the ODbL artifact notice.
-- [ ] Confirm every reviewed Node and locked Python package has an allowed or exact approved
+- [x] Confirm every reviewed Node and locked Python package has an allowed or exact approved
   disposition.
-- [ ] Confirm no LGPL- or MPL-covered dependency file was modified under the current disposition.
-- [ ] Review screenshots, the selected launch-media disposition, release copy, and issue examples
+- [x] Confirm no LGPL- or MPL-covered dependency file was modified under the current disposition.
+- [x] Review screenshots, the selected launch-media disposition, release copy, and issue examples
   for restricted or personal data.
-- [ ] Approve the exact public repository or operator contact URL for
+- [x] Approve `https://github.com/Brianletort/ai-infrastructure-reality-ledger` as the public
+  repository contact URL for
   `REALITY_LEDGER_OVERPASS_CONTACT_URL`. It must be a public HTTPS path without credentials,
   query parameters, or a fragment. Live ingestion remains blocked and falls back to the
   explicitly synthetic fixture until this value is configured and reviewed.
 
 ## Security and repository hygiene
 
-- [ ] Run the configured local secret-pattern scan through the final release gates.
-- [ ] Run a separate approved repository-history secret scan after the first local commit and before
+- [x] Run the configured local secret-pattern scan through the final release gates.
+- [x] Run a separate approved repository-history secret scan after the first local commit and before
   public visibility.
-- [ ] Confirm `.env.local`, credentials, private keys, local evidence, browser profiles, traces, and
+- [x] Confirm `.env.local`, credentials, private keys, local evidence, browser profiles, traces, and
   temporary video directories are excluded.
-- [ ] Run `npm run release:verify-boundaries` after the production build. Confirm both the source
+- [x] Run `npm run release:verify-boundaries` after the production build. Confirm both the source
   package inventory and hosting package inventory exclude `.local/**`, and confirm neither package
   contains a symlink resolving into `.local/**`.
 - [ ] Confirm security-reporting instructions point to an active private channel before visibility.
 - [ ] Confirm branch protection, required review, dependency alerts, and least-privilege repository
   access.
-- [ ] Describe scan results as configured local checks, not full security verification.
+- [x] Describe scan results as configured local checks, not full security verification.
 
 ## Final local release gate
 
@@ -117,28 +117,28 @@ npm run release:verify-boundaries
 npm run gates:release
 ```
 
-- [ ] Review `evaluations/review_report.md` and `evaluations/review_report.json`.
-- [ ] Require 0 measured failures.
-- [ ] Record every inconclusive gate and explicit owner disposition.
-- [ ] Review Chromium, Firefox, and WebKit results.
-- [ ] Review launch screenshots and the selected media disposition. For Option A, inspect video for
+- [x] Review `evaluations/review_report.md` and `evaluations/review_report.json`.
+- [x] Require 0 measured failures.
+- [x] Record every inconclusive gate and explicit owner disposition.
+- [x] Review Chromium, Firefox, and WebKit results.
+- [x] Review launch screenshots and the selected media disposition. For Option A, inspect video for
   warning visibility, meaningful WebGL, bounded size, and unrelated local content. For Option B,
   confirm no video is retained and the pending disclosure/storyboard is consistent.
-- [ ] For representative laptop real-GPU evidence, require `generatedAt` within the configured
+- [x] For representative laptop real-GPU evidence, require `generatedAt` within the configured
   freshness window, route, `source-fingerprint` revision identity for the current no-commit
   `/globe` runtime fingerprint, capture method, browser name/version/user agent, renderer, overlay
   and canvas geometry, summarized frame evidence, frameCount/duration/fps consistency within
   tolerance, and hashes for available screenshots or demo files.
-- [ ] Confirm generated report and launch artifacts match the proposed revision.
+- [x] Confirm generated report and launch artifacts match the proposed revision.
 
 ## Commit, remote, and public visibility
 
 These steps require final approval and are intentionally not executed by local package preparation.
 
-- [ ] Create the first reviewed local commit from the approved file inventory.
-- [ ] Create or confirm the approved remote repository.
-- [ ] Push the approved branch without force.
-- [ ] Review the remote diff, rendered README, license, issue forms, and security settings while the
+- [x] Create the first reviewed local commit from the approved file inventory.
+- [x] Create or confirm the approved remote repository.
+- [x] Push the approved branch without force.
+- [x] Review the remote diff, rendered README, license, issue forms, and security settings while the
   repository remains private.
 - [ ] Create the approved tag and GitHub release from the same evaluated revision.
 - [ ] Change repository visibility only after dual release approval and remote post-checks.
@@ -158,18 +158,18 @@ approval is recorded for the exact revision and destination.
 - [ ] On the immutable hosted preview, verify `/robots.txt` contains `Allow: /`, the rendered HTML
   contains `<meta name="robots" content="index, follow">`, the canonical origin is correct, and no
   route emits `noindex` or `nofollow`.
-- [ ] If approval is absent, a post-check fails, or the destination changes, retain or restore
+- [x] Indexing approval for this runtime revision is absent; retain
   `index: false`, `follow: false`, and `disallow: "/"`.
 
 ## Hosting and domain
 
-- [ ] Approve hosting architecture, account, region, cost owner, runtime identity, secret storage,
-  logging, retention, and rollback.
-- [ ] Deploy an immutable preview from the approved revision.
-- [ ] Run route, API, warning, security-header, accessibility, and asset smoke checks.
-- [ ] Confirm no third-party network calls occur in page request paths.
-- [ ] If a domain is approved, apply DNS/TLS changes through the separate release workflow.
-- [ ] Record deployment identifier, artifact hash, UTC time, and owner.
+- [x] Approve Vercel hosting under Brian Letort's account, managed runtime identity and TLS, no
+  application secrets, platform logging/retention, and immutable-deployment rollback.
+- [x] Deploy immutable preview `dpl_Bx2xKmRr1Li3VbgsEbbGJuyHnNk7` from the approved revision.
+- [x] Run route, API, warning, security-header, accessibility, and asset smoke checks.
+- [x] Confirm no third-party network calls occur in page request paths.
+- [x] No custom domain or DNS change is included in this beta.
+- [x] Preview deployment recorded at 2026-08-30T23:46:28Z; owner: Brian Letort.
 
 ## Post-check
 

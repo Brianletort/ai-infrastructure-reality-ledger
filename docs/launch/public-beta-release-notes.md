@@ -28,11 +28,11 @@ not a market dataset.
 
 - The six inventory records and 100 timelines are not real market coverage or public factual data.
 - Capacity is unknown across the inventory; coordinates are generalized to 0.01 degree.
-- No public deployment, production ingestion, production database, service level, adoption,
-  accuracy, or uptime claim exists.
-- Search indexing is intentionally closed: page metadata remains `noindex,nofollow` and
-  `/robots.txt` disallows all crawling. These controls stay closed until hosted public-visibility
-  approval is recorded for the exact revision and destination.
+- A public Vercel deployment hosts the synthetic demonstration. No production ingestion,
+  production database, service level, adoption, accuracy, or uptime claim exists.
+- Search indexing remains intentionally closed: page metadata emits `noindex,nofollow`, and
+  `/robots.txt` disallows crawling. Enabling indexing requires separate hosted public-visibility
+  approval for the resulting runtime revision.
 - Live Overpass ingestion is blocked by default. It requires a validated, approved public
   repository or operator contact URL in `REALITY_LEDGER_OVERPASS_CONTACT_URL`; an absent or invalid
   value falls back to the explicitly synthetic fixture without starting a network request.
