@@ -1,0 +1,339 @@
+{
+  "aliasGroups": [],
+  "conflicts": [
+    {
+      "facilityIds": [
+        "facility-osm-760f52f356d7d3dc9fc1",
+        "facility-osm-f5830eec8a232d60acf4"
+      ],
+      "id": "conflict-osm-b7351dce1d5d548a",
+      "reason": "overlapping-point-and-area",
+      "sourceRecordIds": [
+        "node/1001",
+        "way/2001"
+      ],
+      "status": "unresolved"
+    }
+  ],
+  "metadata": {
+    "attribution": "\u00a9 OpenStreetMap contributors",
+    "datasetTimestamp": "2026-08-29T23:37:14.144296Z",
+    "license": "ODbL-1.0",
+    "limitations": [
+      "OpenStreetMap tagging is voluntary and uneven; untagged facilities are absent.",
+      "Coordinates are generalized to 0.01 degree in distributable data and public APIs.",
+      "OSM presence does not establish operator, tenant, capacity, facility type beyond explicit source tags, activation, or lifecycle state.",
+      "Overlapping point, building, and campus representations remain unresolved conflicts.",
+      "The Canada federal legacy dataset is contextual only; no official comprehensive commercial registry was verified for Canada or Mexico.",
+      "Live ingestion blocker recorded for this generation: bounded Overpass retrieval failed: HTTP Error 429: Too Many Requests"
+    ],
+    "notComplete": true,
+    "queryVersion": "osm-overpass-na-v1",
+    "recordCount": 6,
+    "shareAlike": true,
+    "sourceTimestamp": "2026-08-29T20:30:00Z",
+    "synthetic": true
+  },
+  "records": [
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-43681388092c8c3a7e56",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "node/2001",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture node/2001",
+          "url": "https://osm.example.invalid/node/2001"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "telecom=data_center",
+        "id": "facility-osm-43681388092c8c3a7e56",
+        "lifecycleState": "unknown",
+        "missing": [
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Ontario Compute",
+        "operator": "Synthetic Operator Canada"
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "CA",
+        "displayLatitude": 43.65,
+        "displayLongitude": -79.38,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-43681388092c8c3a7e56",
+        "geometryType": "point",
+        "id": "site-osm-43681388092c8c3a7e56",
+        "locality": "Toronto",
+        "macroRegion": "Canada",
+        "metro": "Toronto"
+      },
+      "sourceRecordIds": [
+        "node/2001"
+      ],
+      "sourceTags": {
+        "addr:city": "Toronto",
+        "name": "Synthetic Ontario Compute",
+        "operator": "Synthetic Operator Canada",
+        "telecom": "data_center"
+      }
+    },
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-316add245b25fd1d87d4",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "node/3001",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture node/3001",
+          "url": "https://osm.example.invalid/node/3001"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "building=data_center",
+        "id": "facility-osm-316add245b25fd1d87d4",
+        "lifecycleState": "unknown",
+        "missing": [
+          "operator",
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Valle Compute",
+        "operator": null
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "MX",
+        "displayLatitude": 19.43,
+        "displayLongitude": -99.13,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-316add245b25fd1d87d4",
+        "geometryType": "point",
+        "id": "site-osm-316add245b25fd1d87d4",
+        "locality": "Ciudad de M\u00e9xico",
+        "macroRegion": "Mexico",
+        "metro": null
+      },
+      "sourceRecordIds": [
+        "node/3001"
+      ],
+      "sourceTags": {
+        "addr:city": "Ciudad de M\u00e9xico",
+        "building": "data_center",
+        "name": "Synthetic Valle Compute"
+      }
+    },
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-760f52f356d7d3dc9fc1",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "node/1001",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture node/1001",
+          "url": "https://osm.example.invalid/node/1001"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "telecom=data_center",
+        "id": "facility-osm-760f52f356d7d3dc9fc1",
+        "lifecycleState": "unknown",
+        "missing": [
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Potomac Compute",
+        "operator": "Synthetic Operator East"
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "US",
+        "displayLatitude": 38.95,
+        "displayLongitude": -77.45,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-760f52f356d7d3dc9fc1",
+        "geometryType": "point",
+        "id": "site-osm-760f52f356d7d3dc9fc1",
+        "locality": "Ashburn",
+        "macroRegion": "United States",
+        "metro": "Northern Virginia"
+      },
+      "sourceRecordIds": [
+        "node/1001"
+      ],
+      "sourceTags": {
+        "addr:city": "Ashburn",
+        "name": "Synthetic Potomac Compute",
+        "operator": "Synthetic Operator East",
+        "telecom": "data_center"
+      }
+    },
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-5ab9532adbaee0890235",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "node/1002",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture node/1002",
+          "url": "https://osm.example.invalid/node/1002"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "telecom=data_center",
+        "id": "facility-osm-5ab9532adbaee0890235",
+        "lifecycleState": "unknown",
+        "missing": [
+          "operator",
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Trinity Compute",
+        "operator": null
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "US",
+        "displayLatitude": 32.9,
+        "displayLongitude": -97.04,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-5ab9532adbaee0890235",
+        "geometryType": "point",
+        "id": "site-osm-5ab9532adbaee0890235",
+        "locality": "Irving",
+        "macroRegion": "United States",
+        "metro": "Dallas\u2013Fort Worth"
+      },
+      "sourceRecordIds": [
+        "node/1002"
+      ],
+      "sourceTags": {
+        "addr:city": "Irving",
+        "name": "Synthetic Trinity Compute",
+        "telecom": "data_center"
+      }
+    },
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-1072d5143dff1517cd3a",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "node/1003",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture node/1003",
+          "url": "https://osm.example.invalid/node/1003"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "man_made=data_center",
+        "id": "facility-osm-1072d5143dff1517cd3a",
+        "lifecycleState": "unknown",
+        "missing": [
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Sonoran Compute",
+        "operator": "Synthetic Operator West"
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "US",
+        "displayLatitude": 33.45,
+        "displayLongitude": -112.07,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-1072d5143dff1517cd3a",
+        "geometryType": "point",
+        "id": "site-osm-1072d5143dff1517cd3a",
+        "locality": "Phoenix",
+        "macroRegion": "United States",
+        "metro": "Phoenix"
+      },
+      "sourceRecordIds": [
+        "node/1003"
+      ],
+      "sourceTags": {
+        "addr:city": "Phoenix",
+        "man_made": "data_center",
+        "name": "Synthetic Sonoran Compute",
+        "operator": "Synthetic Operator West"
+      }
+    },
+    {
+      "citations": [
+        {
+          "attribution": "\u00a9 OpenStreetMap contributors",
+          "evidenceId": "evidence-osm-f5830eec8a232d60acf4",
+          "exactGeometryRestricted": true,
+          "retrievedAt": "2026-08-29T23:37:14.144296Z",
+          "sourceId": "osm-overpass-v1",
+          "sourceRecordId": "way/2001",
+          "sourceTimestamp": "2026-08-29T20:30:00Z",
+          "title": "Synthetic OSM fixture way/2001",
+          "url": "https://osm.example.invalid/way/2001"
+        }
+      ],
+      "facility": {
+        "aliases": [],
+        "capacityMw": null,
+        "facilityType": "building=data_center",
+        "id": "facility-osm-f5830eec8a232d60acf4",
+        "lifecycleState": "unknown",
+        "missing": [
+          "operator",
+          "capacityMw",
+          "lifecycleState"
+        ],
+        "name": "Synthetic Potomac Compute",
+        "operator": null
+      },
+      "site": {
+        "coordinatePrecision": "generalized-0.01-degree",
+        "countryCode": "US",
+        "displayLatitude": 38.95,
+        "displayLongitude": -77.45,
+        "exactGeometryRestricted": true,
+        "facilityId": "facility-osm-f5830eec8a232d60acf4",
+        "geometryType": "area",
+        "id": "site-osm-f5830eec8a232d60acf4",
+        "locality": "Ashburn",
+        "macroRegion": "United States",
+        "metro": "Northern Virginia"
+      },
+      "sourceRecordIds": [
+        "way/2001"
+      ],
+      "sourceTags": {
+        "addr:city": "Ashburn",
+        "building": "data_center",
+        "name": "Synthetic Potomac Compute"
+      }
+    }
+  ]
+}

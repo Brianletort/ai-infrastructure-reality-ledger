@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "detail": "All 20 deterministic desktop/mobile baselines were inspected with the repaired globe capture. The launch globe image visibly renders land, graticule, evidence markers, playback controls, and the synthetic warning; the mobile baseline retains the equivalent text index. No overlap, out-of-bounds content, text overflow, unreadable density, missing assets, or inconsistent typography was observed.",
+  "baselineCount": 20,
+  "inspectionBasis": [
+    "rendered screenshot review",
+    "second Playwright pixel-comparison pass",
+    "responsive horizontal-overflow assertions"
+  ],
+  "repairCycles": 3,
+  "hardFailures": []
+}

@@ -1,0 +1,50 @@
+{
+  "activationPrecisionProxy": 1.0,
+  "approvedSyntheticReviewCount": 25,
+  "citationCompleteness": 1.0,
+  "conflictCount": 3,
+  "corpusMode": "synthetic-reviewed-beta",
+  "eventDistribution": {
+    "activation": 5,
+    "announcement": 25,
+    "construction": 8,
+    "contested": 3,
+    "correction": 2,
+    "moratorium_policy": 4,
+    "permit": 12,
+    "readiness": 6,
+    "stale": 3,
+    "superseded": 2,
+    "unknown": 2
+  },
+  "failedReviewCount": 0,
+  "metro": {
+    "countryCode": "US",
+    "name": "Northern Virginia",
+    "region": "Virginia",
+    "slug": "northern-virginia"
+  },
+  "missingnessDistribution": {
+    "synthetic_activation_not_asserted": 20
+  },
+  "pendingReviewCount": 0,
+  "publicFactApprovalCount": 0,
+  "sourceModeDistribution": {
+    "synthetic-fixture": 72
+  },
+  "stateDistribution": {
+    "active": 5,
+    "announced": 25,
+    "contested": 3,
+    "corrected": 2,
+    "permitted": 12,
+    "policy_hold": 4,
+    "ready": 6,
+    "stale": 3,
+    "superseded": 2,
+    "under_construction": 8,
+    "unknown": 2
+  },
+  "timelineCount": 25,
+  "warning": "SYNTHETIC REVIEWED BETA CORPUS — NOT PUBLIC FACTUAL DATA. Do not use these records as evidence of real facilities or events."
+}

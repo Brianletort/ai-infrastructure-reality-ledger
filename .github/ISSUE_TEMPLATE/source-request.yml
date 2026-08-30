@@ -1,0 +1,90 @@
+name: Source request
+description: Propose one public source for rights and evidence review.
+title: "[Source]: "
+labels:
+  - source-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Acceptance of this issue approves review only. Do not paste confidential,
+        access-controlled, personal, or unclear-rights content.
+  - type: input
+    id: publisher
+    attributes:
+      label: Accountable publisher
+      description: Name the organization responsible for the source.
+      placeholder: Synthetic State Energy Office
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Exact source URL
+      placeholder: https://example.invalid/bulletins/energy-2026-0042
+    validations:
+      required: true
+  - type: dropdown
+    id: authority
+    attributes:
+      label: Proposed authority
+      options:
+        - primary
+        - authoritative-secondary
+        - secondary
+        - aggregator
+        - unknown
+    validations:
+      required: true
+  - type: dropdown
+    id: directness
+    attributes:
+      label: Proposed directness
+      options:
+        - direct
+        - near-direct
+        - indirect
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Terms, license, and attribution
+      description: Link the terms and state required attribution. Unclear rights fail closed.
+    validations:
+      required: true
+  - type: dropdown
+    id: redistribution
+    attributes:
+      label: Proposed redistribution class
+      options:
+        - republish
+        - derived-only
+        - link-only
+        - prohibited
+    validations:
+      required: true
+  - type: textarea
+    id: claim_scope
+    attributes:
+      label: Claim scope and limits
+      description: State exactly what this source could support and what it cannot support.
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Synthetic fixture proposal
+      description: Describe a non-sensitive fixture and expected normalized output.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have not included confidential, personal, access-controlled, or restricted source content.
+          required: true
+        - label: I understand that a public URL does not by itself grant redistribution rights.
+          required: true

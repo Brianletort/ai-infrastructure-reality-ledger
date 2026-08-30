@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/claim.schema.json",
+  "title": "Claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "entityId",
+    "predicate",
+    "value",
+    "evidenceIds",
+    "confidence",
+    "validFrom",
+    "assertedAt"
+  ],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "entityId": { "type": "string", "format": "uuid" },
+    "predicate": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "value": true,
+    "evidenceIds": {
+      "type": "array",
+      "items": { "type": "string", "format": "uuid" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "confidence": {
+      "$ref": "https://reality-ledger.org/schemas/confidence.schema.json"
+    },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validTo": { "type": "string", "format": "date-time" },
+    "assertedAt": { "type": "string", "format": "date-time" }
+  }
+}

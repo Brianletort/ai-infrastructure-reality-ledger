@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-30T17:18:28.576039+00:00",
+  "results": [
+    {
+      "detail": "Two independent fixed-time generations were byte-identical.",
+      "evidence": {
+        "artifactCount": 18,
+        "sha256": {
+          "corpus/deep-metro-reviewed-beta.json": "47feb6b98826746edd35a00acdc5d6fd12e6d0daa304097bef65e57acd75558c",
+          "odbl/north-america-facilities.json": "3dbb94489a80f0a219b4253ddb48bb46c726d2e70a24e357332568749b907aaf",
+          "reports/deep-metro/dallas-fort-worth.json": "7a0823fb5f1cf4e6c98a27ef4d7248963f79d26f760cda2c2fb6e473892896fc",
+          "reports/deep-metro/dallas-fort-worth.md": "8447c9fcbd715c3cf1beda86d04e2a5a2a8d68fcc83bd9c809ede95ae90429ec",
+          "reports/deep-metro/northern-virginia.json": "d18c3c06a2954467ce6dcecd1178daacd62c8fe730af45372f9a06701489d6e0",
+          "reports/deep-metro/northern-virginia.md": "c4b065ec81a34623006ff6e88f1f17ad3dac60b07ed7d17543fd3930f2233048",
+          "reports/deep-metro/phoenix.json": "1c18e5e7aa912e273c1c8727f60006927c52c8c111fb3dd6e135fde645ac6849",
+          "reports/deep-metro/phoenix.md": "738692128041e5f90491f67d3b4322123cf7225279a3056612ccf7bfa5c00790",
+          "reports/deep-metro/toronto.json": "c4e2774ff047e31f60e91bd7db5ee2cb6f4c7327ef461bf22fc6edd8c210a057",
+          "reports/deep-metro/toronto.md": "ace51fb8decfa623faa52e9585f4a23786a7ba6e40b9cf0ca16c09937c120a57",
+          "reports/north-america-coverage.json": "c1cdef01495ea5d8ac25cb537fae64b5151dc5ef85a28bf09784de323cbf2d12",
+          "reports/north-america-coverage.md": "6d247b3b5984b1a02b7fa6555c7c84a39b5253a55f840e48bd09da0c950786bd",
+          "restricted/3cfc54c6bad289358c6b5352c8d85872d231baf136a9076f6630656437f474e1": "3cfc54c6bad289358c6b5352c8d85872d231baf136a9076f6630656437f474e1",
+          "restricted/4008810f696bd170663a5fc52a8f8b527cf2aa3a7ce4468523b214e9145b29e7": "4008810f696bd170663a5fc52a8f8b527cf2aa3a7ce4468523b214e9145b29e7",
+          "restricted/422cc639972284bc9190e3810c2d380fc76d9ed65ff7a874c3b8e9226f1300c3": "422cc639972284bc9190e3810c2d380fc76d9ed65ff7a874c3b8e9226f1300c3",
+          "restricted/773705c7f674b94b51526a5910ba8a2f8c0da36463e850933384a832c447310d": "773705c7f674b94b51526a5910ba8a2f8c0da36463e850933384a832c447310d",
+          "restricted/77ff5db72d4fa12e5a25ca48743e8cd3426996f0ec7537dc63fc952306af37e6": "77ff5db72d4fa12e5a25ca48743e8cd3426996f0ec7537dc63fc952306af37e6",
+          "restricted/f88f2786d0141dcffa679d5348d4abbebd64d8c8c67be95f01edfd19bb215ce3": "f88f2786d0141dcffa679d5348d4abbebd64d8c8c67be95f01edfd19bb215ce3"
+        }
+      },
+      "id": "data.deterministic-generation",
+      "status": "pass"
+    },
+    {
+      "detail": "Synthetic labeled-set precision 1.000; threshold 0.950. This is not real-world precision.",
+      "evidence": {
+        "correctResolvedPredictions": 3,
+        "dataset": "labeled synthetic gold set only",
+        "isRealWorldPrecision": false,
+        "precision": 1.0,
+        "predictions": [
+          {
+            "candidate": "Alpha DC",
+            "expected": "alpha",
+            "outcome": "resolved",
+            "predicted": "alpha"
+          },
+          {
+            "candidate": "Synthetic Beta Campus",
+            "expected": "beta",
+            "outcome": "resolved",
+            "predicted": "beta"
+          },
+          {
+            "candidate": "Gamma Compute",
+            "expected": "gamma",
+            "outcome": "review",
+            "predicted": null
+          },
+          {
+            "candidate": "Synthetic Alpha Campus",
+            "expected": "alpha",
+            "outcome": "resolved",
+            "predicted": "alpha"
+          },
+          {
+            "candidate": "No matching synthetic entity",
+            "expected": null,
+            "outcome": "unresolved",
+            "predicted": null
+          }
+        ],
+        "resolvedPredictions": 3
+      },
+      "id": "data.entity-resolution-synthetic-gold",
+      "status": "pass"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "summary": {
+    "counts": {
+      "fail": 0,
+      "inconclusive": 0,
+      "pass": 2
+    },
+    "decision": "pass"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "thresholds": {
+    "serverHtmlP95Ms": 1500,
+    "interactiveReadyP95Ms": 4000,
+    "globeDynamicJavaScriptKiB": 2500,
+    "layerGenerationP95Ms": 50,
+    "playbackReducerP95Ms": 5,
+    "headlessAnimationCadenceFps": 20,
+    "realGpuLaptopFps": 60,
+    "realGpuMinimumDurationMs": 10000,
+    "realGpuFreshnessMaxAgeMs": 3600000,
+    "realGpuFpsTolerance": 0.05,
+    "representativeMobileFps": 30,
+    "axeSeriousOrCritical": 0,
+    "visualPixelRatio": 0.01,
+    "entityResolutionSyntheticPrecision": 0.95
+  },
+  "licenses": {
+    "allow": [
+      "0BSD",
+      "Apache-2.0",
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "CC0-1.0",
+      "ISC",
+      "MIT",
+      "MIT-0",
+      "PSF-2.0",
+      "Python-2.0",
+      "Unlicense"
+    ],
+    "review": [
+      "BlueOak-1.0.0",
+      "CC-BY-4.0",
+      "LGPL-3.0-or-later",
+      "MPL-2.0",
+      "ODbL-1.0"
+    ],
+    "approvedDispositions": {
+      "BlueOak-1.0.0": {
+        "requiredObligations": [
+          "include-notice",
+          "provide-license-link",
+          "provide-source-link",
+          "retain-license-terms"
+        ]
+      },
+      "CC-BY-4.0": {
+        "requiredObligations": [
+          "include-notice",
+          "provide-license-link",
+          "provide-source-link",
+          "retain-attribution",
+          "identify-license"
+        ]
+      },
+      "LGPL-3.0-or-later": {
+        "requiredObligations": [
+          "include-notice",
+          "provide-license-link",
+          "provide-source-link",
+          "preserve-dynamic-linking",
+          "preserve-relinking-rights"
+        ],
+        "requiredModificationStatus": "unmodified"
+      },
+      "MPL-2.0": {
+        "requiredObligations": [
+          "include-notice",
+          "provide-license-link",
+          "provide-source-link",
+          "preserve-file-level-copyleft"
+        ],
+        "requiredModificationStatus": "unmodified"
+      }
+    }
+  },
+  "browserRoutes": [
+    "/",
+    "/globe",
+    "/metros/northern-virginia",
+    "/facilities/facility-osm-43681388092c8c3a7e56",
+    "/timelines/synthetic-northern-virginia-01",
+    "/search?q=synthetic",
+    "/compare?id=facility-osm-43681388092c8c3a7e56&id=facility-osm-316add245b25fd1d87d4",
+    "/corrections",
+    "/sources",
+    "/methodology",
+    "/route-that-does-not-exist"
+  ]
+}

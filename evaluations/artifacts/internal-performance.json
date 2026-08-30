@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-08-30T17:18:30.033Z",
+  "measured": {
+    "layerGenerationP95Ms": 0.11050000000000182,
+    "playbackReducerP95Ms": 0.0019131669999999303,
+    "highQualityArcCount": 8,
+    "lowQualityArcCount": 4
+  },
+  "thresholds": {
+    "serverHtmlP95Ms": 1500,
+    "interactiveReadyP95Ms": 4000,
+    "globeDynamicJavaScriptKiB": 2500,
+    "layerGenerationP95Ms": 50,
+    "playbackReducerP95Ms": 5,
+    "headlessAnimationCadenceFps": 20,
+    "realGpuLaptopFps": 60,
+    "realGpuMinimumDurationMs": 10000,
+    "realGpuFreshnessMaxAgeMs": 3600000,
+    "realGpuFpsTolerance": 0.05,
+    "representativeMobileFps": 30,
+    "axeSeriousOrCritical": 0,
+    "visualPixelRatio": 0.01,
+    "entityResolutionSyntheticPrecision": 0.95
+  },
+  "notes": "CPU-only local microbenchmarks; not a GPU FPS measurement."
+}

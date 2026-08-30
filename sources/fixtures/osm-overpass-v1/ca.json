@@ -1,0 +1,21 @@
+{
+  "version": 0.6,
+  "generator": "Synthetic Overpass fixture",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-29T20:30:00Z"
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 2001,
+      "lat": 43.653481,
+      "lon": -79.383934,
+      "tags": {
+        "telecom": "data_center",
+        "name": "Synthetic Ontario Compute",
+        "operator": "Synthetic Operator Canada",
+        "addr:city": "Toronto"
+      }
+    }
+  ]
+}

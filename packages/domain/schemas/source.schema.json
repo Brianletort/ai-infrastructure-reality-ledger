@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "url", "authority", "directness", "redistribution"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "url": { "type": "string", "format": "uri" },
+    "authority": {
+      "type": "string",
+      "enum": ["primary", "authoritative-secondary", "secondary", "aggregator", "unknown"]
+    },
+    "directness": {
+      "type": "string",
+      "enum": ["direct", "near-direct", "indirect", "unknown"]
+    },
+    "publisher": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "redistribution": {
+      "$ref": "https://reality-ledger.org/schemas/license-redistribution.schema.json"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/relationship.schema.json",
+  "title": "Relationship",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "fromEntityId",
+    "toEntityId",
+    "relationshipType",
+    "validFrom",
+    "evidenceIds"
+  ],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "fromEntityId": { "type": "string", "format": "uuid" },
+    "toEntityId": { "type": "string", "format": "uuid" },
+    "relationshipType": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validTo": { "type": "string", "format": "date-time" },
+    "evidenceIds": {
+      "type": "array",
+      "items": { "type": "string", "format": "uuid" },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/event.schema.json",
+  "title": "Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "entityId", "eventType", "observedAt", "evidenceIds"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "entityId": { "type": "string", "format": "uuid" },
+    "eventType": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "description": { "type": "string", "minLength": 1, "maxLength": 5000 },
+    "evidenceIds": {
+      "type": "array",
+      "items": { "type": "string", "format": "uuid" },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

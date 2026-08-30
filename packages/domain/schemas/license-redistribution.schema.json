@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/license-redistribution.schema.json",
+  "title": "License and redistribution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["classification"],
+  "properties": {
+    "licenseName": { "type": "string", "minLength": 1 },
+    "licenseUrl": { "type": "string", "format": "uri" },
+    "classification": {
+      "type": "string",
+      "enum": ["republish", "derived-only", "link-only", "prohibited"]
+    },
+    "attribution": { "type": "string", "minLength": 1 },
+    "notes": { "type": "string", "minLength": 1 }
+  }
+}

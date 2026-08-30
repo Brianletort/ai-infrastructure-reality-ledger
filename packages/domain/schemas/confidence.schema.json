@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/confidence.schema.json",
+  "title": "Confidence",
+  "description": "Transparent, independently scored confidence dimensions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["score", "sourceAuthority", "directness", "entityMatch", "rationale"],
+  "properties": {
+    "score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "sourceAuthority": { "type": "number", "minimum": 0, "maximum": 1 },
+    "directness": { "type": "number", "minimum": 0, "maximum": 1 },
+    "entityMatch": { "type": "number", "minimum": 0, "maximum": 1 },
+    "rationale": { "type": "string", "minLength": 1, "maxLength": 2000 }
+  }
+}

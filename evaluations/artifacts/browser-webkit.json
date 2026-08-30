@@ -1,0 +1,19 @@
+{
+  "browserName": "webkit",
+  "browserVersion": "26.5",
+  "project": "webkit",
+  "routes": [
+    "/",
+    "/launch",
+    "/globe",
+    "/metros/northern-virginia",
+    "/facilities/facility-osm-43681388092c8c3a7e56",
+    "/timelines/synthetic-northern-virginia-01",
+    "/search?q=synthetic",
+    "/compare?id=facility-osm-43681388092c8c3a7e56&id=facility-osm-316add245b25fd1d87d4",
+    "/corrections",
+    "/sources",
+    "/methodology",
+    "/route-that-does-not-exist"
+  ]
+}

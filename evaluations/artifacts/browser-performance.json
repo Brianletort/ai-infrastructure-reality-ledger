@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-08-30T17:19:08.573Z",
+  "renderer": "headless Chromium; GPU/FPS representativeness not established",
+  "measured": {
+    "serverHtmlP95Ms": 19.099041999999997,
+    "interactiveReadyP95Ms": 201.55683399999998,
+    "globeDynamicJavaScriptKiB": 2293.521484375,
+    "globeWorkerJavaScriptKiB": 496.2568359375,
+    "headlessAnimationCadenceFps": 41.156027071744376
+  },
+  "scripts": [
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/41y5wr61sn_vf.js",
+      "bytes": 1665962,
+      "kibibytes": 1626.916015625,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/maplibre-gl-shared.mjs",
+      "bytes": 489575,
+      "kibibytes": 478.1005859375,
+      "scope": "worker"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/0a5oueeokg1fj.js",
+      "bytes": 228920,
+      "kibibytes": 223.5546875,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/1atgeaewke7ak.js",
+      "bytes": 194953,
+      "kibibytes": 190.3837890625,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/26jlzea-z864l.js",
+      "bytes": 165751,
+      "kibibytes": 161.8662109375,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/448yp9hinhs2k.js",
+      "bytes": 28915,
+      "kibibytes": 28.2373046875,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/0jo7k-_bbfiuh.js",
+      "bytes": 23938,
+      "kibibytes": 23.376953125,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/vendor/maplibre-gl-worker.mjs",
+      "bytes": 18592,
+      "kibibytes": 18.15625,
+      "scope": "worker"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/0ycfytuo-44jo.js",
+      "bytes": 14860,
+      "kibibytes": 14.51171875,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/turbopack-1x6shv828p9_x.js",
+      "bytes": 9721,
+      "kibibytes": 9.4931640625,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/0zmojm8gwcn3g.js",
+      "bytes": 5597,
+      "kibibytes": 5.4658203125,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/0aeeijb92653j.js",
+      "bytes": 4794,
+      "kibibytes": 4.681640625,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/3m410j505p-3k.js",
+      "bytes": 4400,
+      "kibibytes": 4.296875,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/08okcuav1obk-.js",
+      "bytes": 585,
+      "kibibytes": 0.5712890625,
+      "scope": "page"
+    },
+    {
+      "url": "http://127.0.0.1:4173/_next/static/chunks/3wfstqghrr4lm.js",
+      "bytes": 170,
+      "kibibytes": 0.166015625,
+      "scope": "page"
+    }
+  ],
+  "thresholds": {
+    "serverHtmlP95Ms": 1500,
+    "interactiveReadyP95Ms": 4000,
+    "globeDynamicJavaScriptKiB": 2500,
+    "layerGenerationP95Ms": 50,
+    "playbackReducerP95Ms": 5,
+    "headlessAnimationCadenceFps": 20,
+    "realGpuLaptopFps": 60,
+    "realGpuMinimumDurationMs": 10000,
+    "realGpuFreshnessMaxAgeMs": 3600000,
+    "realGpuFpsTolerance": 0.05,
+    "representativeMobileFps": 30,
+    "axeSeriousOrCritical": 0,
+    "visualPixelRatio": 0.01,
+    "entityResolutionSyntheticPrecision": 0.95
+  },
+  "checks": {
+    "serverHtmlP95Ms": true,
+    "interactiveReadyP95Ms": true,
+    "globeDynamicJavaScriptKiB": true,
+    "headlessAnimationCadenceFps": true
+  },
+  "cadence": {
+    "frameCount": 90,
+    "averageFps": 41.156027071744376,
+    "p95FrameMs": 10
+  },
+  "gpuTargets": {
+    "status": "inconclusive",
+    "laptop60Fps": "not measured in a real GPU browser",
+    "mobile30Fps": "not measured on representative mobile hardware"
+  }
+}

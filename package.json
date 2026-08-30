@@ -1,0 +1,49 @@
+{
+  "name": "ai-infrastructure-reality-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b packages/* && npm run build --workspace web",
+    "lint": "npm run lint --workspace web && eslint \"packages/*/{src,tests}/**/*.{ts,tsx}\"",
+    "test": "vitest run --exclude 'evaluations/browser/**' --exclude 'evaluations/tests/**'",
+    "typecheck": "tsc -b packages/* --pretty false && npm run typecheck --workspace web && tsc --noEmit --project packages/domain/tsconfig.test.json --pretty false && tsc --noEmit --project packages/source-sdk/tsconfig.test.json --pretty false",
+    "python:lint": "uv run --project apps/worker ruff check apps/worker",
+    "python:test": "uv run --project apps/worker pytest apps/worker",
+    "python:typecheck": "uv run --project apps/worker pyright --project apps/worker/pyproject.toml",
+    "gates:test": "node --test evaluations/tests/*.test.mjs",
+    "gates:static": "node evaluations/static-gates.mjs",
+    "gates:data": "uv run --project apps/worker python evaluations/data_quality_gate.py",
+    "gates:browser": "playwright test",
+    "gates:visual:update": "playwright test evaluations/browser/visual.spec.ts --project=chromium --update-snapshots",
+    "gates:release": "node evaluations/run-release-gates.mjs",
+    "release:verify-boundaries": "node evaluations/release-boundary-check.mjs",
+    "launch:capture": "npm run build && node scripts/capture-launch-assets.mjs",
+    "notices:python:generate": "uv run --project apps/worker --with colorama==0.4.6 python evaluations/python_license_inventory.py --output THIRD_PARTY_NOTICES.python.json",
+    "notices:python:check": "uv run --project apps/worker --with colorama==0.4.6 python evaluations/python_license_inventory.py --check THIRD_PARTY_NOTICES.python.json",
+    "notices:generate": "npm run notices:python:generate && node evaluations/generate-third-party-notices.mjs",
+    "notices:check": "npm run notices:python:check && node evaluations/generate-third-party-notices.mjs --check",
+    "inventory:refresh": "uv run --project apps/worker python -m reality_ledger_worker.inventory_cli refresh",
+    "inventory:fixture": "uv run --project apps/worker python -m reality_ledger_worker.inventory_cli refresh --fixture-only",
+    "metro:generate": "uv run --project apps/worker python -m reality_ledger_worker.deep_metro_cli generate"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.62.1",
+    "@types/node": "26.4.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "eslint": "10.9.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.68.0",
+    "vitest": "4.1.11"
+  }
+}

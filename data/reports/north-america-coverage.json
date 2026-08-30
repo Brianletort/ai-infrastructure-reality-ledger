@@ -1,0 +1,85 @@
+{
+  "byCountry": {
+    "CA": 1,
+    "MX": 1,
+    "US": 4
+  },
+  "byFacilityType": {
+    "building=data_center": 2,
+    "man_made=data_center": 1,
+    "telecom=data_center": 3
+  },
+  "byGeometryType": {
+    "area": 1,
+    "point": 5
+  },
+  "byMacroRegion": {
+    "Canada": 1,
+    "Mexico": 1,
+    "United States": 4
+  },
+  "byMetro": {
+    "Dallas\u2013Fort Worth": 1,
+    "Northern Virginia": 2,
+    "Phoenix": 1,
+    "Toronto": 1,
+    "outside-deep-metro-buckets": 1
+  },
+  "bySource": {
+    "osm-overpass-v1": 6
+  },
+  "conflictCount": 1,
+  "conflictsByReason": {
+    "overlapping-point-and-area": 1
+  },
+  "datasetTimestamp": "2026-08-29T23:37:14.144296Z",
+  "deepMetros": {
+    "Dallas\u2013Fort Worth": {
+      "conflictCount": 0,
+      "missingCriticalFieldCount": 3,
+      "operatorKnownCount": 0,
+      "recordCount": 1
+    },
+    "Northern Virginia": {
+      "conflictCount": 2,
+      "missingCriticalFieldCount": 5,
+      "operatorKnownCount": 1,
+      "recordCount": 2
+    },
+    "Phoenix": {
+      "conflictCount": 0,
+      "missingCriticalFieldCount": 2,
+      "operatorKnownCount": 1,
+      "recordCount": 1
+    },
+    "Toronto": {
+      "conflictCount": 0,
+      "missingCriticalFieldCount": 2,
+      "operatorKnownCount": 1,
+      "recordCount": 1
+    }
+  },
+  "limitations": [
+    "OpenStreetMap tagging is voluntary and uneven; untagged facilities are absent.",
+    "Coordinates are generalized to 0.01 degree in distributable data and public APIs.",
+    "OSM presence does not establish operator, tenant, capacity, facility type beyond explicit source tags, activation, or lifecycle state.",
+    "Overlapping point, building, and campus representations remain unresolved conflicts.",
+    "The Canada federal legacy dataset is contextual only; no official comprehensive commercial registry was verified for Canada or Mexico.",
+    "Live ingestion blocker recorded for this generation: bounded Overpass retrieval failed: HTTP Error 429: Too Many Requests"
+  ],
+  "missingCriticalFields": {
+    "capacityMw": 6,
+    "lifecycleState": 6,
+    "name": 0,
+    "operator": 3
+  },
+  "notComplete": true,
+  "providerOperatorKnownness": {
+    "known": 3,
+    "unknown": 3
+  },
+  "queryVersion": "osm-overpass-na-v1",
+  "recordCount": 6,
+  "sourceTimestamp": "2026-08-29T20:30:00Z",
+  "synthetic": true
+}

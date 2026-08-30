@@ -1,0 +1,20 @@
+{
+  "version": 0.6,
+  "generator": "Synthetic Overpass fixture",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-29T20:30:00Z"
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 3001,
+      "lat": 19.432641,
+      "lon": -99.133209,
+      "tags": {
+        "building": "data_center",
+        "name": "Synthetic Valle Compute",
+        "addr:city": "Ciudad de México"
+      }
+    }
+  ]
+}

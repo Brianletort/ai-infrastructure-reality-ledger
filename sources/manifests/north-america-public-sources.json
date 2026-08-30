@@ -1,0 +1,147 @@
+[
+  {
+    "protocolVersion": "1.0",
+    "adapterId": "osm-overpass-v1",
+    "name": "OpenStreetMap data centers via Overpass",
+    "sourceUrl": "https://overpass-api.de/api/interpreter",
+    "publisher": "OpenStreetMap contributors",
+    "authority": "secondary",
+    "directness": "near-direct",
+    "cadence": "continuous; bounded refresh on demand",
+    "rateLimit": {
+      "requests": 1,
+      "perSeconds": 5
+    },
+    "attribution": {
+      "text": "© OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    "license": {
+      "name": "Open Data Commons Open Database License 1.0",
+      "url": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    "termsUrl": "https://osmfoundation.org/wiki/Licence/Licence_and_Legal_FAQ",
+    "sensitivity": "public generalized coordinates; exact source geometry restricted",
+    "redistribution": "republish",
+    "shareAlike": true,
+    "allowedUse": "inventory",
+    "automation": "worker-only",
+    "notes": "Worker-only bounded Overpass queries. Public derivatives retain attribution and ODbL share-alike; exact geometry is excluded from public API output."
+  },
+  {
+    "protocolVersion": "1.0",
+    "adapterId": "pnnl-im3-atlas-manual",
+    "name": "PNNL/DOE IM3 Data Center Atlas",
+    "sourceUrl": "https://www.osti.gov/biblio/3017294",
+    "publisher": "Pacific Northwest National Laboratory / U.S. Department of Energy",
+    "authority": "authoritative-secondary",
+    "directness": "indirect",
+    "cadence": "publisher release",
+    "rateLimit": {
+      "requests": 1,
+      "perSeconds": 60
+    },
+    "attribution": {
+      "text": "PNNL/DOE IM3 Data Center Atlas; ODbL-derived content requires OpenStreetMap attribution",
+      "url": "https://www.osti.gov/biblio/3017294"
+    },
+    "license": {
+      "name": "ODbL-derived; verify release-specific usage notes at manual import",
+      "url": "https://www.osti.gov/biblio/3017294"
+    },
+    "termsUrl": "https://www.osti.gov/biblio/3017294",
+    "sensitivity": "public source; exact geometry restricted in this project",
+    "redistribution": "derived-only",
+    "shareAlike": true,
+    "allowedUse": "inventory",
+    "automation": "manual-import",
+    "notes": "Cleared only for a reviewed manual import because official machine-readable files may require browser download. Automated retrieval is not supported."
+  },
+  {
+    "protocolVersion": "1.0",
+    "adapterId": "canada-legacy-data-centres-context",
+    "name": "Government of Canada Legacy Data Centres",
+    "sourceUrl": "https://open.canada.ca/data/en/dataset/c115e246-3f60-4b0c-8788-ff897e59c9af",
+    "publisher": "Government of Canada",
+    "authority": "primary",
+    "directness": "direct",
+    "cadence": "publisher release",
+    "rateLimit": {
+      "requests": 1,
+      "perSeconds": 10
+    },
+    "attribution": {
+      "text": "Government of Canada",
+      "url": "https://open.canada.ca/en/open-government-licence-canada"
+    },
+    "license": {
+      "name": "Open Government Licence - Canada",
+      "url": "https://open.canada.ca/en/open-government-licence-canada"
+    },
+    "termsUrl": "https://open.canada.ca/en/open-government-licence-canada",
+    "sensitivity": "public aggregate/contextual records",
+    "redistribution": "republish",
+    "shareAlike": false,
+    "allowedUse": "context-only",
+    "automation": "none",
+    "notes": "Federal legacy inventory and closure metrics only. It is not a commercial-facility registry and cannot populate commercial facility records."
+  },
+  {
+    "protocolVersion": "1.0",
+    "adapterId": "mexico-open-data-portal-context",
+    "name": "Mexico historical open-data portal",
+    "sourceUrl": "https://historico.datos.gob.mx/busca/dataset?res_format=CSV",
+    "publisher": "Government of Mexico",
+    "authority": "primary",
+    "directness": "indirect",
+    "cadence": "portal archive",
+    "rateLimit": {
+      "requests": 1,
+      "perSeconds": 10
+    },
+    "attribution": {
+      "text": "datos.gob.mx",
+      "url": "https://historico.datos.gob.mx/"
+    },
+    "license": {
+      "name": "Dataset-specific; no comprehensive facility registry verified",
+      "url": "https://historico.datos.gob.mx/"
+    },
+    "termsUrl": "https://historico.datos.gob.mx/",
+    "sensitivity": "public contextual metadata",
+    "redistribution": "link-only",
+    "shareAlike": false,
+    "allowedUse": "context-only",
+    "automation": "none",
+    "notes": "Discovery context only. No comprehensive official commercial data-center registry has been verified."
+  },
+  {
+    "protocolVersion": "1.0",
+    "adapterId": "peeringdb-prohibited",
+    "name": "PeeringDB bulk data",
+    "sourceUrl": "https://www.peeringdb.com/",
+    "publisher": "PeeringDB",
+    "authority": "aggregator",
+    "directness": "indirect",
+    "cadence": "not applicable",
+    "rateLimit": {
+      "requests": 1,
+      "perSeconds": 60
+    },
+    "attribution": {
+      "text": "Compliance record only; no PeeringDB content ingested",
+      "url": "https://www.peeringdb.com/aup"
+    },
+    "license": {
+      "name": "Restricted by PeeringDB Acceptable Use Policy",
+      "url": "https://www.peeringdb.com/aup"
+    },
+    "termsUrl": "https://www.peeringdb.com/aup",
+    "sensitivity": "not ingested",
+    "redistribution": "prohibited",
+    "shareAlike": false,
+    "allowedUse": "prohibited",
+    "automation": "none",
+    "notes": "Prohibited for this inventory absent explicit permission. Adapters must reject ingestion."
+  }
+]

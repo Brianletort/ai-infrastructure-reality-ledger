@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "deviceClass": "representative-laptop",
+  "generatedAt": "2026-08-30T17:11:37.113Z",
+  "route": "/globe?theme=obsidian",
+  "revision": {
+    "kind": "source-fingerprint",
+    "value": "sha256:fd16f811654ae7ca16a864970e6ac44e083614eb97e4b1c0a66dd045d8f2d62e"
+  },
+  "captureMethod": "real-browser-scripted-measurement",
+  "browser": {
+    "name": "Chrome",
+    "version": "151.0.0.0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+  },
+  "gpu": {
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)"
+  },
+  "overlay": {
+    "visible": true,
+    "width": 1199,
+    "height": 792
+  },
+  "mapCanvas": {
+    "width": 1199,
+    "height": 792
+  },
+  "measurement": {
+    "frameCount": 1200,
+    "durationMs": 10000,
+    "fps": 120,
+    "frameTimeP95Ms": 10.199999999999,
+    "frameTimeMaxMs": 10.400000000001
+  },
+  "frameEvidence": {
+    "kind": "summary",
+    "sampleCount": 1200,
+    "firstFrameAtMs": 13412.5,
+    "lastFrameAtMs": 23412.5
+  },
+  "evidenceHashes": {
+    "docs/assets/launch/globe.png": "094ae96521755941dbf3470c328353b2c342e073f3492fda0d4181d69ff97c7c",
+    "docs/assets/launch/reality-ledger-demo.webm": "388bb19e8623f95414d6fda819261906fe0cb909c7ab74e584fd4b5474d5543f"
+  },
+  "thresholds": {
+    "minimumDurationMs": 10000,
+    "minimumFps": 60,
+    "requireVisibleOverlay": true,
+    "rejectSoftwareRenderer": true
+  }
+}

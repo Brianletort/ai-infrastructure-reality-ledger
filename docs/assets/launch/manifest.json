@@ -1,0 +1,31 @@
+{
+  "capture": "local Playwright Chromium, headless",
+  "viewport": "1440x1000 screenshots; 1440x900 video; 1200x630 social preview",
+  "corpus": "synthetic-reviewed-beta",
+  "video": {
+    "status": "captured",
+    "reason": "Headless WebGL produced a meaningful scene and the synthetic warning was verified."
+  },
+  "files": {
+    "home.png": {
+      "bytes": 370452,
+      "sha256": "cb85e2ed8fca817e60879e0727252dc72ca53f7a4304abad3aa5482668384e18"
+    },
+    "globe.png": {
+      "bytes": 366880,
+      "sha256": "094ae96521755941dbf3470c328353b2c342e073f3492fda0d4181d69ff97c7c"
+    },
+    "timeline-evidence.png": {
+      "bytes": 99586,
+      "sha256": "adb10de4209f941ef52e37230e519392fc6d432f7b33acbe10c9a47705a0b150"
+    },
+    "reality-ledger-og.png": {
+      "bytes": 188387,
+      "sha256": "d034749c6cb862d0aae2796e06b6a72f57381272bb7fc0d38eed28309c5b51c0"
+    },
+    "reality-ledger-demo.webm": {
+      "bytes": 2757219,
+      "sha256": "388bb19e8623f95414d6fda819261906fe0cb909c7ab74e584fd4b5474d5543f"
+    }
+  }
+}

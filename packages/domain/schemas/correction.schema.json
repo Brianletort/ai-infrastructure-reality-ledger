@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/correction.schema.json",
+  "title": "Correction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "targetType", "targetId", "status", "reason", "submittedAt"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "targetType": {
+      "type": "string",
+      "enum": ["entity", "site", "evidence", "claim", "event", "relationship", "source"]
+    },
+    "targetId": { "type": "string", "format": "uuid" },
+    "status": {
+      "type": "string",
+      "enum": ["requested", "accepted", "rejected", "applied"]
+    },
+    "reason": { "type": "string", "minLength": 1, "maxLength": 5000 },
+    "submittedAt": { "type": "string", "format": "date-time" },
+    "resolvedAt": { "type": "string", "format": "date-time" },
+    "replacementEvidenceIds": {
+      "type": "array",
+      "items": { "type": "string", "format": "uuid" },
+      "uniqueItems": true
+    }
+  }
+}

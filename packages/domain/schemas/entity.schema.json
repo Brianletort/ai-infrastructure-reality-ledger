@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/entity.schema.json",
+  "title": "Entity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "name"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "kind": {
+      "type": "string",
+      "enum": ["organization", "facility", "project", "technology", "jurisdiction", "other"]
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 500 },
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,67 @@
+name: Correction report
+description: Propose a reviewed correction to one exact ledger record.
+title: "[Correction]: "
+labels:
+  - correction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security issues here. Do not include private, confidential,
+        personal, access-controlled, or unclear-rights material.
+  - type: input
+    id: record
+    attributes:
+      label: Ledger record identifier
+      placeholder: synthetic-northern-virginia-01:event-02
+    validations:
+      required: true
+  - type: input
+    id: field_or_claim
+    attributes:
+      label: Disputed field or claim
+      placeholder: lifecycle state = activation
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: State the replacement value or bounded correction.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain why the current record is unsupported or incorrect.
+    validations:
+      required: true
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Supporting evidence URL
+      placeholder: https://example.invalid/evidence/SYN-0042
+    validations:
+      required: true
+  - type: textarea
+    id: evidence_metadata
+    attributes:
+      label: Evidence metadata
+      description: Provide publisher, exact reference, publication date, retrieval date, rights, and attribution.
+    validations:
+      required: true
+  - type: textarea
+    id: downstream
+    attributes:
+      label: Known downstream impact
+      description: Identify related events, summaries, or views that may need regeneration.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have not included confidential, personal, access-controlled, or restricted material.
+          required: true
+        - label: I understand that acceptance preserves the prior record through correction or supersession lineage.
+          required: true

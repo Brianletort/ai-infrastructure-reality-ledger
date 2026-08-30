@@ -1,0 +1,5626 @@
+{
+  "config": {
+    "argv": [
+      "/Users/bletort/.hermes/node/bin/node",
+      "/Users/bletort/Data/ai-infrastructure-reality-ledger/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/bletort/Data/ai-infrastructure-reality-ledger/playwright.config.ts",
+    "rootDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/artifacts/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/artifacts/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/artifacts/playwright",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evaluations/artifacts/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start --workspace web -- --hostname 127.0.0.1 --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": false,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "local browser performance stays inside regression budgets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:01.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-4f3632e5e1c766f30976",
+          "file": "performance.spec.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "local browser performance stays inside regression budgets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "One headless engine provides the local regression signal.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/performance.spec.ts",
+                    "line": 32,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:25.402Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "One headless engine provides the local regression signal.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/performance.spec.ts",
+                        "line": 32,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-0b8bf85520ce1c7a73e8",
+          "file": "performance.spec.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "local browser performance stays inside regression budgets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "One headless engine provides the local regression signal.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/performance.spec.ts",
+                    "line": 32,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:48.706Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "One headless engine provides the local regression signal.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/performance.spec.ts",
+                        "line": 32,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-1ced6cf7679529d677d3",
+          "file": "performance.spec.ts",
+          "line": 27,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "smoke.spec.ts",
+      "file": "smoke.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:08.737Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-b6d78b8492bcd5c8939e",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/launch renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:09.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-293b6d706569ec6beee7",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/globe renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:09.550Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-fd8a520bf7ef62cf0fc5",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/metros/northern-virginia renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:17.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-9916ba9f02aab81ab62c",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/facilities/facility-osm-43681388092c8c3a7e56 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 461,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:18.221Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-5e8575ebef9ad10b94dc",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/timelines/synthetic-northern-virginia-01 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 419,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:18.689Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-dd3e16d439670b25744a",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/search?q=synthetic renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 979,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:19.119Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-424833e3d46791b2a004",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/compare?id=facility-osm-43681388092c8c3a7e56&id=facility-osm-316add245b25fd1d87d4 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:20.106Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-4bcb929f51185cad9214",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/corrections renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 356,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:20.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-de646afd2335e1b0ea4f",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/sources renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 331,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:20.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-12342de39ae03de588b6",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/methodology renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 300,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:21.192Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-38727c41f2f6c77387ba",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/route-that-does-not-exist renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:21.498Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-b1469b9d3523b8d1964a",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "key controls are reachable and reduced motion is honored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6030,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:21.797Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-7c37eb3c85881e50c16f",
+          "file": "smoke.spec.ts",
+          "line": 105,
+          "column": 5
+        },
+        {
+          "title": "WebGL-independent fallback remains available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:27.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-4d0d5bda014074e86cf6",
+          "file": "smoke.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "globe overlay occupies the visible map frame when WebGL initializes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:28.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-3f2a861c9fb42bdd0dfc",
+          "file": "smoke.spec.ts",
+          "line": 147,
+          "column": 5
+        },
+        {
+          "title": "API bounds reject abuse and public inventory excludes restricted topology",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:33.874Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-81a5826304dcc7e36995",
+          "file": "smoke.spec.ts",
+          "line": 255,
+          "column": 5
+        },
+        {
+          "title": "security headers are present",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:33.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-8a12d3509670ba092396",
+          "file": "smoke.spec.ts",
+          "line": 271,
+          "column": 5
+        },
+        {
+          "title": "robots remain noindex and disallow crawling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:33.922Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-4f219bb97686a816c4f7",
+          "file": "smoke.spec.ts",
+          "line": 283,
+          "column": 5
+        },
+        {
+          "title": "axe has no serious or critical violations on /",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 760,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:34.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-eee6e43a9baa7800036b",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /launch",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:34.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-f727c9687d8aff48b5ca",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /globe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6685,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:35.729Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-54caa8b69fe45a833cd7",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /compare",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:42.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-62de3e0cfd79dcb24e62",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /corrections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 717,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:43.004Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-dad1e695abbf8095bc29",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "/ renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:26.992Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-8cad38c59b35e594b4ff",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/launch renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 545,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:27.596Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-ffceec732eb4d28129ee",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/globe renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1063,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:28.146Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-069d0d6c6fb5cde14d21",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/metros/northern-virginia renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 492,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:29.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-3f3c65bbdd71d7cd046b",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/facilities/facility-osm-43681388092c8c3a7e56 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:29.712Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-e44e69c3d3ee7cba7b73",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/timelines/synthetic-northern-virginia-01 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:30.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-f430b609c975165b003e",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/search?q=synthetic renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 922,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:30.736Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-f82a23d8af9456c22e68",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/compare?id=facility-osm-43681388092c8c3a7e56&id=facility-osm-316add245b25fd1d87d4 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 485,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:31.663Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-2128fd101c1a567b1d80",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/corrections renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:32.154Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-8181db79798de4dde579",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/sources renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 461,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:33.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-1c99b683675152a04d23",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/methodology renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:33.713Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-75833d4b20dc6ed24d44",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/route-that-does-not-exist renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:34.214Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-261836d2f3fa5fa35806",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "key controls are reachable and reduced motion is honored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:34.974Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-3118a535aced489a4bba",
+          "file": "smoke.spec.ts",
+          "line": 105,
+          "column": 5
+        },
+        {
+          "title": "WebGL-independent fallback remains available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:36.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-46518371b8b6f785c018",
+          "file": "smoke.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "globe overlay occupies the visible map frame when WebGL initializes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Chromium provides deterministic canvas and atlas evidence for the WebGL regression gate.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/smoke.spec.ts",
+                    "line": 151,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:36.775Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Chromium provides deterministic canvas and atlas evidence for the WebGL regression gate.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/smoke.spec.ts",
+                        "line": 151,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-1502a99af90da8f0597e",
+          "file": "smoke.spec.ts",
+          "line": 147,
+          "column": 5
+        },
+        {
+          "title": "API bounds reject abuse and public inventory excludes restricted topology",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:37.039Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-0dffccd13f51456a7efa",
+          "file": "smoke.spec.ts",
+          "line": 255,
+          "column": 5
+        },
+        {
+          "title": "security headers are present",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:37.074Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-ac6ad751f4160353315e",
+          "file": "smoke.spec.ts",
+          "line": 271,
+          "column": 5
+        },
+        {
+          "title": "robots remain noindex and disallow crawling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:37.092Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-a139e4a247e0ea1361d4",
+          "file": "smoke.spec.ts",
+          "line": 283,
+          "column": 5
+        },
+        {
+          "title": "axe has no serious or critical violations on /",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1199,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:37.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-1dd246492c74f891590b",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /launch",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:38.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-34c29b5a54a0095d824b",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /globe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2234,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:39.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-05c1ed352b27f1c298cf",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /compare",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 782,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:42.079Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-14ec765adcef776e9c6a",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /corrections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:42.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-e728688b394a85edde28",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "/ renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 676,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:50.206Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-f26427843f2c4b3b0fa2",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/launch renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:50.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-1d0d02f017dd5add5269",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/globe renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1184,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:51.487Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-501a18bedda6e92b34cb",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/metros/northern-virginia renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 556,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:52.677Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-d2859907031d05315a4f",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/facilities/facility-osm-43681388092c8c3a7e56 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:53.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-5fa0221acb6217a51118",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/timelines/synthetic-northern-virginia-01 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 504,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:53.771Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-6fb62acc3380d83c84fc",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/search?q=synthetic renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:54.282Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-20d1f7072485ff68a681",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/compare?id=facility-osm-43681388092c8c3a7e56&id=facility-osm-316add245b25fd1d87d4 renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:55.242Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-3a94aed33ba7200e6442",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/corrections renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:55.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-6670fe8dbbfa5effadbf",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/sources renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 456,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:56.226Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-37005403ec5239277c2e",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/methodology renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 476,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:56.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-77d587ce36299856f453",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "/route-that-does-not-exist renders without browser errors or overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 470,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:57.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-62b08a4ea133c3066d5a",
+          "file": "smoke.spec.ts",
+          "line": 49,
+          "column": 7
+        },
+        {
+          "title": "key controls are reachable and reduced motion is honored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:57.646Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-74e44a6545496e4ee505",
+          "file": "smoke.spec.ts",
+          "line": 105,
+          "column": 5
+        },
+        {
+          "title": "WebGL-independent fallback remains available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:58.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-25df668da49f2c55e8c4",
+          "file": "smoke.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "globe overlay occupies the visible map frame when WebGL initializes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Chromium provides deterministic canvas and atlas evidence for the WebGL regression gate.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/smoke.spec.ts",
+                    "line": 151,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:59.337Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Chromium provides deterministic canvas and atlas evidence for the WebGL regression gate.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/smoke.spec.ts",
+                        "line": 151,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-d6b689099573bd7a2274",
+          "file": "smoke.spec.ts",
+          "line": 147,
+          "column": 5
+        },
+        {
+          "title": "API bounds reject abuse and public inventory excludes restricted topology",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:59.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-0448fa26f6484ab84bf6",
+          "file": "smoke.spec.ts",
+          "line": 255,
+          "column": 5
+        },
+        {
+          "title": "security headers are present",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:59.670Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-210ed5c354b5fca2f6cd",
+          "file": "smoke.spec.ts",
+          "line": 271,
+          "column": 5
+        },
+        {
+          "title": "robots remain noindex and disallow crawling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 660,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:59.692Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-e368f2247002c10ba683",
+          "file": "smoke.spec.ts",
+          "line": 283,
+          "column": 5
+        },
+        {
+          "title": "axe has no serious or critical violations on /",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1543,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:00.359Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-1f9cf0475fa31084067c",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /launch",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:01.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-9e56967dce73c1e75dd7",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /globe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:03.195Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-19a8412557adddb2c5c7",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /compare",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:04.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-83197a69ee09d1133059",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        },
+        {
+          "title": "axe has no serious or critical violations on /corrections",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:05.479Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4219922fea2e2bd3c691-af53cfb47430ddf546fa",
+          "file": "smoke.spec.ts",
+          "line": 296,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:43.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "Lw=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-7e44f3908c4bc41f0246",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "home mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:44.579Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "Lw=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-e0f6e274ba1f2f82f442",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:44.953Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2xhdW5jaA=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-afb514331790922c22fb",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:45.594Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2xhdW5jaA=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-e15502b6e0ba8969c696",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:45.965Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPW9ic2lkaWFu"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-8f2552a0b5c5e202280d",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6010,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:52.193Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPW9ic2lkaWFu"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-fb26e1f1509abb8f6387",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5767,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:19:58.207Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPWluZnJhcmVk"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-58ec23239bbbf1eaf967",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:03.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPWluZnJhcmVk"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-9b86c843d86bf4a2e8d2",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:10.860Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPWRheWxpZ2h0"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-a9f85744c9e955b57d05",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5223,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:16.951Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2dsb2JlP3RoZW1lPWRheWxpZ2h0"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-8ad44630bc08135d1e3f",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 334,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:22.179Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L21ldHJvcy9ub3J0aGVybi12aXJnaW5pYQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-90491d619f3e237fa61e",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 246,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:22.518Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L21ldHJvcy9ub3J0aGVybi12aXJnaW5pYQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-302edeaece10ae1ab8ec",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:22.770Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2ZhY2lsaXRpZXMvZmFjaWxpdHktb3NtLTQzNjgxMzg4MDkyYzhjM2E3ZTU2"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-883a260a51940bf19006",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:23.108Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2ZhY2lsaXRpZXMvZmFjaWxpdHktb3NtLTQzNjgxMzg4MDkyYzhjM2E3ZTU2"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-c1a261e9550be9d4208d",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 311,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:23.333Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L3RpbWVsaW5lcy9zeW50aGV0aWMtbm9ydGhlcm4tdmlyZ2luaWEtMDE="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-912173e3f37846ab607a",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:23.649Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L3RpbWVsaW5lcy9zeW50aGV0aWMtbm9ydGhlcm4tdmlyZ2luaWEtMDE="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-8b250dd1ee9f9f07c4a5",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 313,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:23.876Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2NvbXBhcmU/aWQ9ZmFjaWxpdHktb3NtLTQzNjgxMzg4MDkyYzhjM2E3ZTU2JmlkPWZhY2lsaXR5LW9zbS0zMTZhZGQyNDViMjVmZDFkODdkNA=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-c432b4baf09505487d6a",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:24.194Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2NvbXBhcmU/aWQ9ZmFjaWxpdHktb3NtLTQzNjgxMzg4MDkyYzhjM2E3ZTU2JmlkPWZhY2lsaXR5LW9zbS0zMTZhZGQyNDViMjVmZDFkODdkNA=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-696bceefa850118c7912",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:24.428Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2NvcnJlY3Rpb25z"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-533db505db61324df0b4",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:24.740Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "route",
+                      "contentType": "text/plain",
+                      "body": "L2NvcnJlY3Rpb25z"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1838da306605c3aaf5cd",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "home desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:43.685Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-331ed44ee5a9b96c0610",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "home mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:43.865Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-9b2dab68c7d4c40391f4",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:44.065Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-a18ec455f79e957c6059",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 171,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:44.262Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-b66e22b682f719dc0e9b",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 184,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:44.438Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-8c9ea1515d454b8f93f1",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:44.628Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-bbe551b4419ac02902a6",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:44.829Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-024b9b39de8c3f55843f",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:45.019Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-5ab516457101fd6f9c1b",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 167,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:45.753Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-e2e01c0e96a23972f055",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:45.925Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1b9b9047b01665c3757d",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.080Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-dbf25fae3d740932ea41",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.240Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-aa92fbc66154c368a123",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 153,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.398Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-abeb8e6c3cc8e45fd31e",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.555Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-0894988db65f880ca3dc",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.714Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d802cccdb53674925ed4",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 171,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:46.876Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-756ddad4837fdf218545",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:47.051Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-567bdd30cbd6fc462b91",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:47.229Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-47e827f305d0b90bdb52",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:47.807Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-7629db769906ffd7426f",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 145,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:20:47.973Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-7faf94cd02854feb9b44",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "home desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:06.451Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-5ef1fbf1ec77d659c652",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "home mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:06.694Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1aa28b569a75a784f152",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:06.954Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-26c2162bb0dcffcf4e05",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "launch mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:07.211Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-a825d502604754f5032e",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 251,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:07.460Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-fc003cf8125e24456f81",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-obsidian mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:07.717Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-c0cb54760be7ff62611b",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:07.980Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-a32c334bc54b9cb5cef1",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-infrared mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:08.235Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-db4c5c357de2504b8715",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:08.490Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1c60d567cae0b2d43d19",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "globe-daylight mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:08.766Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1282ba68be8ef9c35ad3",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:09.047Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-7a684d085148486c150e",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "metro mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 285,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:09.305Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-c27ec583dab681e790d2",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:09.597Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-3c471fea6ae5bfa70f62",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "facility mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 266,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:09.897Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-2472e3417e6c07bcd5b7",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:10.171Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-10d89107ca9e2a9a69fd",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "timeline mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 295,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:10.466Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-948679cad283aae69d4c",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:10.769Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d815ecd43c9aa75ef59f",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "compare mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:11.072Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-ef8a8611033fb6298b96",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction desktop matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 293,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:11.347Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d845fefc8cf6d17d2b2c",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        },
+        {
+          "title": "correction mobile matches baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Visual baselines use one deterministic renderer.",
+                  "location": {
+                    "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                    "line": 56,
+                    "column": 12
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-30T17:21:11.650Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Visual baselines use one deterministic renderer.",
+                      "location": {
+                        "file": "/Users/bletort/Data/ai-infrastructure-reality-ledger/evaluations/browser/visual.spec.ts",
+                        "line": 56,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-b0ee13c80b2a9901633e",
+          "file": "visual.spec.ts",
+          "line": 52,
+          "column": 9
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-30T17:19:00.261Z",
+    "duration": 131766.826,
+    "expected": 88,
+    "skipped": 44,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

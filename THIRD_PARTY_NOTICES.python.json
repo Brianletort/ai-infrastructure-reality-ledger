@@ -1,0 +1,945 @@
+{
+  "ecosystem": "python",
+  "lockfile": "apps/worker/uv.lock",
+  "metadataSource": "installed importlib.metadata matched to uv.lock",
+  "packages": [
+    {
+      "attribution": "Sebastian Kraemer and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "BSD-2-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-2-clause",
+      "metadataEvidence": {
+        "installedName": "boolean.py",
+        "license": "BSD-2-Clause",
+        "licenseClassifiers": [],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "boolean-py",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/boolean-py/5.0/",
+      "sourceUrl": "https://github.com/bastikr/boolean.py",
+      "version": "5.0"
+    },
+    {
+      "attribution": "Eric Larson, Frost Ming, William Woodruff and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "CacheControl",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "Apache-2.0",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "cachecontrol",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/cachecontrol/0.14.4/",
+      "sourceUrl": "https://github.com/psf/cachecontrol",
+      "version": "0.14.4"
+    },
+    {
+      "attribution": "Kenneth Reitz and contributors.",
+      "disposition": "review-required",
+      "ecosystem": "python",
+      "license": "MPL-2.0",
+      "licenseUrl": "https://www.mozilla.org/MPL/2.0/",
+      "metadataEvidence": {
+        "installedName": "certifi",
+        "license": "MPL-2.0",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "certifi",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link",
+        "requires-explicit-approval"
+      ],
+      "packageUrl": "https://pypi.org/project/certifi/2026.7.22/",
+      "sourceUrl": "https://github.com/certifi/python-certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "attribution": "charset-normalizer authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "charset-normalizer",
+        "license": "MIT",
+        "licenseClassifiers": [],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "charset-normalizer",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/charset-normalizer/3.5.1/",
+      "sourceUrl": "https://github.com/jawah/charset_normalizer",
+      "version": "3.5.1"
+    },
+    {
+      "attribution": "colorama authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "BSD-3-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-3-clause",
+      "metadataEvidence": {
+        "installedName": "colorama",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: BSD License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "colorama",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/colorama/0.4.6/",
+      "sourceUrl": "https://github.com/tartley/colorama",
+      "version": "0.4.6"
+    },
+    {
+      "attribution": "Paul Horton and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "cyclonedx-python-lib",
+        "license": "Apache-2.0",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "cyclonedx-python-lib",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/cyclonedx-python-lib/11.12.0/",
+      "sourceUrl": "https://github.com/CycloneDX/cyclonedx-python-lib",
+      "version": "11.12.0"
+    },
+    {
+      "attribution": "Christian Heimes and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "PSF-2.0",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "metadataEvidence": {
+        "installedName": "defusedxml",
+        "license": "PSFL",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Python Software Foundation License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "defusedxml",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/defusedxml/0.7.1/",
+      "sourceUrl": "https://github.com/tiran/defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "attribution": "filelock authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "filelock",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "filelock",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/filelock/3.32.4/",
+      "sourceUrl": "https://github.com/tox-dev/py-filelock",
+      "version": "3.32.4"
+    },
+    {
+      "attribution": "idna authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "BSD-3-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-3-clause",
+      "metadataEvidence": {
+        "installedName": "idna",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "BSD-3-Clause",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "idna",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/idna/3.19/",
+      "sourceUrl": "https://github.com/kjd/idna",
+      "version": "3.19"
+    },
+    {
+      "attribution": "iniconfig authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "iniconfig",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "iniconfig",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/iniconfig/2.3.0/",
+      "sourceUrl": "https://github.com/pytest-dev/iniconfig",
+      "version": "2.3.0"
+    },
+    {
+      "attribution": "nexB. Inc. and others and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "license-expression",
+        "license": "Apache-2.0",
+        "licenseClassifiers": [],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "license-expression",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/license-expression/30.4.4/",
+      "sourceUrl": "https://github.com/aboutcode-org/license-expression",
+      "version": "30.4.4"
+    },
+    {
+      "attribution": "markdown-it-py authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "markdown-it-py",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "markdown-it-py",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/markdown-it-py/4.2.0/",
+      "sourceUrl": "https://github.com/executablebooks/markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "attribution": "mdurl authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "mdurl",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "mdurl",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/mdurl/0.1.2/",
+      "sourceUrl": "https://github.com/executablebooks/mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "attribution": "msgpack authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "msgpack",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "Apache-2.0",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "msgpack",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/msgpack/1.2.2/",
+      "sourceUrl": "https://github.com/msgpack/msgpack-python/",
+      "version": "1.2.2"
+    },
+    {
+      "attribution": "Eugene Kalinin and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "BSD-3-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-3-clause",
+      "metadataEvidence": {
+        "installedName": "nodeenv",
+        "license": "BSD",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: BSD License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "nodeenv",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/nodeenv/1.10.0/",
+      "sourceUrl": "https://github.com/ekalinin/nodeenv",
+      "version": "1.10.0"
+    },
+    {
+      "attribution": "the purl authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "packageurl-python",
+        "license": "MIT",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "packageurl-python",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/packageurl-python/0.17.6/",
+      "sourceUrl": "https://github.com/package-url/packageurl-python",
+      "version": "0.17.6"
+    },
+    {
+      "attribution": "packaging authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "licenseUrl": "https://spdx.org/licenses/",
+      "metadataEvidence": {
+        "installedName": "packaging",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "Apache-2.0 OR BSD-2-Clause",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "packaging",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/packaging/26.3/",
+      "sourceUrl": "https://github.com/pypa/packaging",
+      "version": "26.3"
+    },
+    {
+      "attribution": "pip authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pip",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pip",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pip/26.2.1/",
+      "sourceUrl": "https://github.com/pypa/pip",
+      "version": "26.2.1"
+    },
+    {
+      "attribution": "Dustin Ingram and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "pip-api",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pip-api",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pip-api/0.0.34/",
+      "sourceUrl": "https://github.com/di/pip-api",
+      "version": "0.0.34"
+    },
+    {
+      "attribution": "Alex Cameron and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "pip_audit",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pip-audit",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pip-audit/2.10.1/",
+      "sourceUrl": "https://github.com/pypa/pip-audit",
+      "version": "2.10.1"
+    },
+    {
+      "attribution": "The pip authors, nexB. Inc. and others and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pip-requirements-parser",
+        "license": "MIT",
+        "licenseClassifiers": [],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pip-requirements-parser",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pip-requirements-parser/32.0.1/",
+      "sourceUrl": "https://github.com/nexB/pip-requirements-parser",
+      "version": "32.0.1"
+    },
+    {
+      "attribution": "platformdirs authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "platformdirs",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "platformdirs",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/platformdirs/4.11.5/",
+      "sourceUrl": "https://github.com/tox-dev/platformdirs",
+      "version": "4.11.5"
+    },
+    {
+      "attribution": "pluggy authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pluggy",
+        "license": "MIT",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pluggy",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pluggy/1.6.0/",
+      "sourceUrl": "https://pypi.org/project/pluggy/1.6.0/",
+      "version": "1.6.0"
+    },
+    {
+      "attribution": "Paul Horton and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "py-serializable",
+        "license": "Apache-2.0",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "py-serializable",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/py-serializable/2.1.0/",
+      "sourceUrl": "https://github.com/madpah/serializable",
+      "version": "2.1.0"
+    },
+    {
+      "attribution": "Pygments authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "BSD-2-Clause",
+      "licenseUrl": "https://opensource.org/license/bsd-2-clause",
+      "metadataEvidence": {
+        "installedName": "Pygments",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "BSD-2-Clause",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pygments",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pygments/2.21.0/",
+      "sourceUrl": "https://github.com/pygments/pygments",
+      "version": "2.21.0"
+    },
+    {
+      "attribution": "pyparsing authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pyparsing",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pyparsing",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pyparsing/3.3.2/",
+      "sourceUrl": "https://github.com/pyparsing/pyparsing.git",
+      "version": "3.3.2"
+    },
+    {
+      "attribution": "Robert Craigie and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pyright",
+        "license": "MIT",
+        "licenseClassifiers": [],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pyright",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pyright/1.1.411/",
+      "sourceUrl": "https://github.com/RobertCraigie/pyright-python",
+      "version": "1.1.411"
+    },
+    {
+      "attribution": "Brianna Laugher, Bruno Oliveira, Floris Bruynooghe, Freya Bruhin, Holger Krekel, Others (See AUTHORS), Ronny Pfannschmidt and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "pytest",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "pytest",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/pytest/9.1.1/",
+      "sourceUrl": "https://github.com/pytest-dev/pytest",
+      "version": "9.1.1"
+    },
+    {
+      "attribution": "requests authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "requests",
+        "license": "Apache-2.0",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "requests",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/requests/2.34.2/",
+      "sourceUrl": "https://github.com/psf/requests",
+      "version": "2.34.2"
+    },
+    {
+      "attribution": "Will McGugan and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "rich",
+        "license": "MIT",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "rich",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/rich/15.0.0/",
+      "sourceUrl": "https://github.com/Textualize/rich",
+      "version": "15.0.0"
+    },
+    {
+      "attribution": "ruff authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "ruff",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "ruff",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/ruff/0.16.5/",
+      "sourceUrl": "https://github.com/astral-sh/ruff",
+      "version": "0.16.5"
+    },
+    {
+      "attribution": "Grant Jenks and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+      "metadataEvidence": {
+        "installedName": "sortedcontainers",
+        "license": "Apache 2.0",
+        "licenseClassifiers": [
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "sortedcontainers",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/sortedcontainers/2.4.0/",
+      "sourceUrl": "http://www.grantjenks.com/docs/sortedcontainers/",
+      "version": "2.4.0"
+    },
+    {
+      "attribution": "tomli authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "tomli",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "tomli",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/tomli/2.4.1/",
+      "sourceUrl": "https://github.com/hukkin/tomli",
+      "version": "2.4.1"
+    },
+    {
+      "attribution": "tomli_w authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "tomli_w",
+        "license": null,
+        "licenseClassifiers": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "licenseExpression": null,
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "tomli-w",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/tomli-w/1.2.0/",
+      "sourceUrl": "https://github.com/hukkin/tomli-w",
+      "version": "1.2.0"
+    },
+    {
+      "attribution": "typing_extensions authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "PSF-2.0",
+      "licenseUrl": "https://docs.python.org/3/license.html",
+      "metadataEvidence": {
+        "installedName": "typing_extensions",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "PSF-2.0",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "typing-extensions",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/typing-extensions/4.16.0/",
+      "sourceUrl": "https://github.com/python/typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "attribution": "urllib3 authors and contributors.",
+      "disposition": "allowed-policy",
+      "ecosystem": "python",
+      "license": "MIT",
+      "licenseUrl": "https://opensource.org/license/mit",
+      "metadataEvidence": {
+        "installedName": "urllib3",
+        "license": null,
+        "licenseClassifiers": [],
+        "licenseExpression": "MIT",
+        "status": "installed-metadata-matched-lock"
+      },
+      "modificationStatus": "unmodified",
+      "modifiedFiles": [],
+      "name": "urllib3",
+      "obligations": [
+        "include-notice",
+        "provide-license-link",
+        "provide-source-link"
+      ],
+      "packageUrl": "https://pypi.org/project/urllib3/2.7.0/",
+      "sourceUrl": "https://github.com/urllib3/urllib3",
+      "version": "2.7.0"
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}

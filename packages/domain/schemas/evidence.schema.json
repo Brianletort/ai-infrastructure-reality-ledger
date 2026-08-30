@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reality-ledger.org/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceId",
+    "lifecycleState",
+    "summary",
+    "validFrom",
+    "assertedAt",
+    "sourcePublishedAt",
+    "retrievedAt"
+  ],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "sourceId": { "type": "string", "format": "uuid" },
+    "lifecycleState": {
+      "type": "string",
+      "enum": [
+        "announced",
+        "readiness_evidence",
+        "construction_evidence",
+        "activation_evidence",
+        "contested",
+        "stale",
+        "superseded",
+        "unknown"
+      ]
+    },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 5000 },
+    "snapshotUri": { "type": "string", "format": "uri" },
+    "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "validFrom": { "type": "string", "format": "date-time" },
+    "validTo": { "type": "string", "format": "date-time" },
+    "assertedAt": { "type": "string", "format": "date-time" },
+    "sourcePublishedAt": { "type": "string", "format": "date-time" },
+    "retrievedAt": { "type": "string", "format": "date-time" }
+  }
+}
