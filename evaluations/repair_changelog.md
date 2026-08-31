@@ -148,3 +148,17 @@ failure until the contract remediation was explicitly approved on 2026-08-30.
   frames over 10,000.00 ms, 120.00 FPS, p95 10.20 ms, maximum 10.40 ms, and bound globe PNG/demo
   WebM hashes. Representative laptop is **PASS**; representative midrange mobile remains
   **INCONCLUSIVE**.
+
+## Vercel function data-tracing repair — 2026-08-31
+
+- Production smoke testing found `/api/inventory` returned HTTP 500 because Next.js function
+  tracing omitted checked-in JSON outside `apps/web`.
+- Repair: `next.config.ts` now declares the monorepo tracing root and includes `data/**/*.json` and
+  `sources/manifests/**/*.json` for API functions. A focused release test locks this packaging
+  contract.
+- Verification: immutable preview `dpl_4HBDbi5ho6N7XbXsGY5vK28MBt17` returned the six-record
+  synthetic inventory without restricted source identifiers. The full release suite reports 32
+  pass, 0 fail, and one accepted mobile inconclusive.
+- Final M4 recapture: 1,206 frames over 10,050.00 ms at 120.00 FPS on the Apple M4 Pro renderer,
+  bound to runtime fingerprint
+  `sha256:db8adaf9a321b2b6d0e5c15dfd5567c22d93808820a8745e77f711f6fb85a889`.

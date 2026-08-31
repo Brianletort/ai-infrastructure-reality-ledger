@@ -8,9 +8,9 @@ push, remote repository, public visibility, hosting, domain, release, or product
 - [x] Launch-candidate rerun: 32 measured gates pass.
 - [x] Launch-candidate rerun: 0 measured gates fail.
 - [x] Representative laptop real-GPU gate: **pass** at 120.00 FPS over 10,050.00 ms. The
-  scripted real-browser artifact was generated at 2026-08-30T23:50:09.280Z for
+  scripted real-browser artifact was generated at 2026-08-31T00:03:56.701Z for
   `/globe?theme=obsidian` with `/globe` runtime fingerprint
-  `sha256:fd16f811654ae7ca16a864970e6ac44e083614eb97e4b1c0a66dd045d8f2d62e`, Chrome
+  `sha256:db8adaf9a321b2b6d0e5c15dfd5567c22d93808820a8745e77f711f6fb85a889`, Chrome
   151.0.0.0, the Apple M4 Pro Metal renderer, matching 1199 × 792 overlay/canvas geometry,
   summarized frame evidence, consistent frame math, and bound globe PNG/demo WebM hashes.
 - [ ] Representative midrange mobile gate: **inconclusive**; the 30 FPS target remains unmeasured.
@@ -40,18 +40,14 @@ not block publication when both release approvers explicitly accept Option B.
 
 ## Approval record
 
-- [x] Architecture approval: Brian Letort, 2026-08-30T18:52:00Z, `/globe` runtime fingerprint
+- [x] Reapprove runtime fingerprint
+  `sha256:db8adaf9a321b2b6d0e5c15dfd5567c22d93808820a8745e77f711f6fb85a889` after the
+  production API tracing repair. Earlier approvals apply to the superseded fingerprint
   `sha256:fd16f811654ae7ca16a864970e6ac44e083614eb97e4b1c0a66dd045d8f2d62e`.
-- [x] Data/source/license approval: Brian Letort, 2026-08-30T18:52:00Z, same reviewed revision.
-- [x] Security approval: Brian Letort, 2026-08-30T18:52:00Z, configured local scans and documented
-  residual risks reviewed; this is not full security assurance.
-- [x] Performance approval: Brian Letort, 2026-08-30T18:52:00Z, laptop pass and unmeasured mobile
-  residual risk accepted.
-- [x] Release approval 1: Brian Letort, 2026-08-30T18:52:00Z.
-- [x] Release approval 2: Daniel Letort, 2026-08-30T23:42:00Z, same reviewed revision and captured
-  launch media.
-- [x] Merge/publication approval: Brian Letort, 2026-08-30T18:52:00Z, conditional on the second
-  independent approval and remaining checklist controls.
+- [x] Release approval 1: Brian Letort, 2026-08-31T10:02:00Z, repaired runtime fingerprint.
+- [x] Release approval 2: Daniel Letort, 2026-08-31T10:02:00Z, repaired runtime fingerprint.
+- [x] Merge/publication approval: Brian Letort, 2026-08-31T10:02:00Z, repaired runtime
+  fingerprint.
 
 Dual release approvals are required. No approver can approve a revision different from the one
 evaluated without rerunning affected gates.
@@ -165,11 +161,11 @@ approval is recorded for the exact revision and destination.
 
 - [x] Approve Vercel hosting under Brian Letort's account, managed runtime identity and TLS, no
   application secrets, platform logging/retention, and immutable-deployment rollback.
-- [x] Deploy immutable preview `dpl_Bx2xKmRr1Li3VbgsEbbGJuyHnNk7` from the approved revision.
+- [x] Deploy immutable preview `dpl_4HBDbi5ho6N7XbXsGY5vK28MBt17` from the approved revision.
 - [x] Run route, API, warning, security-header, accessibility, and asset smoke checks.
 - [x] Confirm no third-party network calls occur in page request paths.
 - [x] No custom domain or DNS change is included in this beta.
-- [x] Preview deployment recorded at 2026-08-30T23:46:28Z; owner: Brian Letort.
+- [x] Preview deployment recorded at 2026-08-31T00:01:04Z; owner: Brian Letort.
 
 ## Post-check
 

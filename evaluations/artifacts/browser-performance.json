@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-30T23:56:45.974Z",
+  "generatedAt": "2026-08-31T00:04:54.695Z",
   "renderer": "headless Chromium; GPU/FPS representativeness not established",
   "measured": {
-    "serverHtmlP95Ms": 24.458374999999933,
-    "interactiveReadyP95Ms": 297.42316700000015,
+    "serverHtmlP95Ms": 14.879666999999927,
+    "interactiveReadyP95Ms": 203.11704099999997,
     "globeDynamicJavaScriptKiB": 2293.521484375,
     "globeWorkerJavaScriptKiB": 496.2568359375,
-    "headlessAnimationCadenceFps": 120.30477208354162
+    "headlessAnimationCadenceFps": 48.100048099128756
   },
   "scripts": [
     {
@@ -124,8 +124,8 @@
   },
   "cadence": {
     "frameCount": 90,
-    "averageFps": 120.30477208354162,
-    "p95FrameMs": 9.700000000000728
+    "averageFps": 48.100048099128756,
+    "p95FrameMs": 9.5
   },
   "gpuTargets": {
     "status": "inconclusive",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-30T23:56:02.680Z",
+  "generatedAt": "2026-08-31T00:04:17.727Z",
   "measured": {
-    "layerGenerationP95Ms": 0.0837500000000091,
-    "playbackReducerP95Ms": 0.0022490000000000235,
+    "layerGenerationP95Ms": 0.06941700000004403,
+    "playbackReducerP95Ms": 0.00146062500000005,
     "highQualityArcCount": 8,
     "lowQualityArcCount": 4
   },

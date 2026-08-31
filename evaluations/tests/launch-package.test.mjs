@@ -253,6 +253,15 @@ test("robots remain closed until hosted public-visibility approval", () => {
   assert.match(releaseNotes, /hosted\s+public-visibility\s+approval/i);
 });
 
+test("production functions trace checked-in data dependencies", () => {
+  const config = read("apps/web/next.config.ts");
+
+  assert.match(config, /outputFileTracingRoot:\s*resolve\(import\.meta\.dirname,\s*["']\.\.\/\.\.["']\)/);
+  assert.match(config, /outputFileTracingIncludes/);
+  assert.match(config, /\.\.\/\.\.\/data\/\*\*\/\*\.json/);
+  assert.match(config, /\.\.\/\.\.\/sources\/manifests\/\*\*\/\*\.json/);
+});
+
 test("environment example exactly matches consumed production variables", () => {
   const sourceFiles = [
     ...walkSourceFiles("apps/web/src"),
