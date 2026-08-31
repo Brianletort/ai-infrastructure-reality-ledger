@@ -2,7 +2,7 @@
 
 **Decision: INCONCLUSIVE**
 
-Generated 2026-08-30T23:58:55.673Z. A pass means only that the measured local gate met its documented
+Generated 2026-08-31T00:06:33.963Z. A pass means only that the measured local gate met its documented
 threshold. Unmeasured claims are inconclusive. The local headless cadence is a regression signal,
 not evidence for a representative device. The recorded real-browser laptop gate is evaluated
 separately; the 30 FPS representative midrange mobile target remains unmeasured. Configured local
@@ -31,21 +31,21 @@ security scans passing is not full security verification or assurance.
 | misuse.correction-external-mutation | PASS | All measured assertions passed. |
 | data.deterministic-generation | PASS | Two independent fixed-time generations were byte-identical. |
 | data.entity-resolution-synthetic-gold | PASS | Synthetic labeled-set precision 1.000; threshold 0.950. This is not real-world precision. |
-| harness.behavior-tests | PASS | Command passed in 192 ms. |
-| gates.static | PASS | Command passed in 1162 ms. |
-| data.python-gates | PASS | Command passed in 256 ms. |
-| typescript.tests | PASS | Command passed in 2133 ms. |
-| typescript.lint | PASS | Command passed in 5628 ms. |
-| typescript.typecheck | PASS | Command passed in 3673 ms. |
-| python.tests | PASS | Command passed in 928 ms. |
-| python.lint | PASS | Command passed in 229 ms. |
-| python.typecheck | PASS | Command passed in 2742 ms. |
+| harness.behavior-tests | PASS | Command passed in 146 ms. |
+| gates.static | PASS | Command passed in 1198 ms. |
+| data.python-gates | PASS | Command passed in 198 ms. |
+| typescript.tests | PASS | Command passed in 1546 ms. |
+| typescript.lint | PASS | Command passed in 4709 ms. |
+| typescript.typecheck | PASS | Command passed in 3224 ms. |
+| python.tests | PASS | Command passed in 875 ms. |
+| python.lint | PASS | Command passed in 238 ms. |
+| python.typecheck | PASS | Command passed in 2166 ms. |
 | security.npm-audit | PASS | Configured local npm audit passed; this is not full security verification. |
 | security.python-audit | PASS | Configured local Python audit passed; this is not full security verification. |
-| build.production | PASS | Command passed in 14754 ms. |
+| build.production | PASS | Command passed in 15707 ms. |
 | release.package-boundaries | PASS | Source and hosting package inventories exclude .local/** restricted evidence paths. |
-| browser.cross-browser-accessibility-visual-performance | PASS | Command passed in 142216 ms. |
-| repository.diff-check | PASS | Command passed in 52 ms. |
+| browser.cross-browser-accessibility-visual-performance | PASS | Command passed in 106803 ms. |
+| repository.diff-check | PASS | Command passed in 60 ms. |
 | browser.versions | PASS | All three pinned Playwright browser engines recorded version evidence. |
 | performance.measured-budgets | PASS | Measured local HTML, readiness, JS payload, headless cadence, layer, and reducer budgets passed. |
 | performance.real-gpu-laptop | PASS | Representative laptop real-GPU measurement passed at 120.00 FPS over 10050.00 ms. |

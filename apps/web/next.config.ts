@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { resolve } from "node:path";
 
 const contentSecurityPolicy = [
   "default-src 'self'",
@@ -16,6 +17,10 @@ const contentSecurityPolicy = [
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@reality-ledger/visuals"],
+  outputFileTracingRoot: resolve(import.meta.dirname, "../.."),
+  outputFileTracingIncludes: {
+    "/api/**/*": ["../../data/**/*.json", "../../sources/manifests/**/*.json"],
+  },
   async headers() {
     return [
       {
